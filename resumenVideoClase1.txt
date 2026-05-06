@@ -1,0 +1,29 @@
+0:00 - 3:00: Introducción a la materia y definición de información como un conjunto de datos procesados que cambian el estado de conocimiento del receptor.
+3:00 - 6:00: Se comienza a analizar las características de la información, enfocándose específicamente en qué tan crítica es, definida por su indispensabilidad para que la organización opere.
+6:00 - 9:00: Discusión sobre la criticidad en función de los objetivos de la organización, utilizando el ejemplo de la temperatura de un equipo industrial para ilustrar que la disponibilidad de datos es vital para prevenir fallos.
+9:00 - 12:00: Explicación del concepto de información valiosa, diferenciándola de la crítica; se explica que algo valioso es un activo apreciado, pero cuya ausencia no necesariamente detiene la operación (ejemplo: bonificaciones a clientes).
+12:00 - 15:00: Análisis sobre si la información puede ser valiosa y crítica a la vez, usando el ejemplo clásico de la "fórmula de Coca-Cola" y cómo la competencia podría aprovecharla.
+15:00 - 18:00: Importancia de identificar estas características para priorizar recursos, ya que los medios de protección son finitos y no toda la información requiere el mismo nivel de resguardo.
+18:00 - 21:00: Se introduce la categoría de información sensitiva, aclarando que se refiere a quién está autorizado a verla, y se discute su diferencia con los conceptos anteriores.
+21:00 - 24:00: Enfoque en información personal y sensitiva (como historiales médicos), explicando que su filtración genera daños irreparables y posibles consecuencias legales para la persona perfilada.
+24:00 - 27:00: Reflexión sobre el manejo de datos personales en sistemas, sugiriendo que si no es estrictamente necesaria para la operación, lo mejor es no guardarla para evitar riesgos legales.
+27:00 - 30:00: Resumen de las tres características (crítico, valioso, sensitivo) y cómo se deben ponderar para proteger los repositorios de información adecuadamente.
+30:00 - 33:00: Debate sobre contratos de confidencialidad y ejemplos de normativas (como HIPAA) para proteger el acceso a historias clínicas y trazabilidad de los usuarios.
+33:00 - 36:00: Análisis del rastreo de actividad (logueo) en sistemas de salud y otros entornos, enfatizando la importancia de registrar quién accede a información sensible.
+36:00 - 39:00: Aplicación del concepto de información sensitiva en Recursos Humanos, mencionando los legajos y salarios como datos protegidos.
+39:00 - 42:00: Introducción del triángulo CID (Confidencialidad, Integridad y Disponibilidad) como pilar fundamental de la seguridad de la información.
+42:00 - 45:00: Definición técnica de los tres pilares: confidencialidad (acceso autorizado), integridad (veracidad/no alteración) y disponibilidad (facilidad de acceso).
+45:00 - 48:00: Discusión sobre la relación inversa entre estos pilares; aumentar la seguridad suele reducir la disponibilidad (ejemplo: sitios de supermercados vs. carritos de compra).
+48:00 - 55:00: Reflexión sobre la subjetividad de la seguridad, utilizando el ejemplo de la percepción del riesgo en una parada de transporte público.
+55:00 - 58:00: Aplicación de la percepción subjetiva a los sistemas: el peligro de la "falsa sensación de seguridad" cuando un cliente cree que su software no requiere más inversiones.
+58:00 - 1:01:00: Argumento sobre cómo la seguridad debe ser un proceso cíclico de revisión, ya que los entornos cambian y las vulnerabilidades evolucionan constantemente.
+1:01:00 - 1:04:00: Conclusión sobre el dilema de la inversión en seguridad: dejar de invertir por sentirse seguro es un error estratégico grave.
+1:04:00 - 1:07:00: Diferenciación entre Seguridad de la Información (procesos, normativas, gestión) y Seguridad Informática (herramientas técnicas, antivirus, firewalls).
+1:07:00 - 1:10:00: Análisis de roles distintos: el profesional de procesos frente al técnico encargado de implementar el hardening y configuración de servidores.
+1:10:00 - 1:13:00: Definición de incidente de seguridad como cualquier brecha, falla o acceso no autorizado que afecte datos, sea por accidente o malicia.
+1:13:00 - 1:16:00: Clasificación de incidentes: accidentales, internos (empleados desleales o represalias) y ciberataques externos.
+1:16:00 - 1:19:00: Importancia de los procedimientos de desvinculación de personal para mitigar el riesgo interno de robo de información.
+1:19:00 - 1:22:00: Diferencia entre un incidente accidental (negligencia) y la complejidad de un ataque planificado.
+1:22:00 - 1:25:00: Comparativa entre ataques internos (abuso de confianza) y ciberataques planificados (análisis de objetivos, desarrollo técnico).
+1:25:00 - 1:28:00: Ejemplo histórico de Stuxnet contra la planta nuclear de Natanz, ilustrando la sofisticación de un ataque a nivel estatal.
+1:28:00 - 1:33:29: Recapitulación final de los conceptos vistos (triángulo CID, orígenes de incidentes) y cierre de la clase indicando dónde hallar el material anexo en la plataforma.

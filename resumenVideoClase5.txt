@@ -1,0 +1,80 @@
+0:00 - 4:00: Se presentan los anuncios administrativos: el parcial presencial será el 11 de mayo en el aula 606. Se repasan conceptos previos sobre áreas de despliegue (cliente vs. servidor) y la diferencia técnica entre debilidad (weakness) y vulnerabilidad.
+
+4:00 - 8:00: Se profundiza en la relación entre debilidades y vulnerabilidades, explicando que las segundas son explotaciones basadas en las primeras. (Nota: el video tiene una pausa técnica en la transcripción en este segmento).
+
+8:00 - 12:00: Análisis de cómo instituciones como SISA y NIST clasifican las vulnerabilidades. Se destaca el aumento del 200% en vulnerabilidades detectadas y la importancia de priorizar según el impacto crítico.
+
+12:00 - 16:00: Discusión sobre el NVD (National Vulnerability Database) y su relación con los códigos CVE. Se retoma la explicación sobre técnicas de denegación de servicio (DoS).
+
+16:00 - 20:00: Explicación técnica de técnicas de ataque como flooding, sniffing (redes inalámbricas como Wi-Fi, Bluetooth, NFC), ataques al cliente (tampering, ejecución de JavaScript) y una clasificación de malware (rootkits, backdoors, ransomware).
+
+20:00 - 24:00: Introducción detallada al proyecto OWASP Top 10 (versión 2025). Se explica el flujo de análisis de amenazas y la importancia del ranking estandarizado.
+
+24:00 - 28:00: Se detallan las categorías del Top 10: pérdida de control de acceso, configuración insegura y fallos en la cadena de suministro de software.
+
+28:00 - 32:00: Comparativa entre la versión 2021 y la actual del OWASP Top 10. Se observa la madurez en la identificación de problemas y la incorporación de nuevos fallos como el manejo de condiciones inesperadas.
+
+32:00 - 36:00: Foco en la pérdida de control de acceso. Se analizan ejemplos básicos de cómo la ocultación de funcionalidades (security by obscurity) no es una medida de protección eficaz.
+
+36:00 - 40:00: Continuación de ejemplos sobre control de acceso y riesgos de exposición de endpoints administrativos.
+
+40:00 - 44:00: Análisis de referencias directas a objetos (IDOR). Cómo el uso de parámetros predecibles en URLs expone datos confidenciales.
+
+44:00 - 48:00: Estrategias para mitigar IDOR: validación del lado del servidor y control de sesiones.
+
+48:00 - 52:00: Técnicas de protección visual y uso de codificación Base64 para evitar referencias directas al backend en volúmenes pequeños de datos.
+
+52:00 - 56:00: Análisis de código: cómo un atacante infiere la tecnología (ej. Java Server Faces) inspeccionando el HTML y los requests.
+
+56:00 - 1:00:00: Inicio del ítem: Configuración de seguridad incorrecta. El riesgo de dejar configuraciones de desarrollo (debug, accesos rápidos) en entornos de producción.
+
+1:00:00 - 1:04:00: Impacto de la falta de un proceso de deployment seguro y la tasa de incidencia (28%) de configuraciones erróneas.
+
+1:04:00 - 1:08:00: Introducción a las entidades externas XML (XXE). Explicación de cómo funciona el parser de XML y las cinco entidades básicas.
+
+1:08:00 - 1:12:00: Explicación de por qué las entidades externas son vectores de ataque similares a la inyección SQL.
+
+1:12:00 - 1:16:00: Demostración práctica de un ataque XXE para leer archivos sensibles del sistema operativo (ej. /etc/passwd).
+
+1:16:00 - 1:20:00: Cómo el atacante manipula el XML para extraer información no autorizada del servidor.
+
+1:20:00 - 1:24:00: Ataques de Denegación de Servicio (DoS) usando XXE contra dispositivos especiales como /dev/random para agotar memoria.
+
+1:24:00 - 1:28:00: Medidas de mitigación para XXE: deshabilitar entidades externas en la configuración de la JVM.
+
+1:28:00 - 1:32:00: Uso de herramientas automáticas como Dependency Check para identificar vulnerabilidades en librerías de terceros.
+
+1:32:00 - 1:36:00: Análisis de reportes generados por Dependency Check y cómo priorizar la actualización de componentes vulnerables.
+
+1:36:00 - 1:40:00: Fallas criptográficas. Diferencia entre proteger datos en almacenamiento (reposo) y en tránsito.
+
+1:40:00 - 1:44:00: Dilemas sobre dónde cifrar: ¿disco, base de datos o aplicación? Análisis de impacto en rendimiento vs. seguridad.
+
+1:44:00 - 1:48:00: Cifrado a nivel de base de datos vs. cifrado a nivel de aplicación (más costoso, pero más seguro).
+
+1:48:00 - 1:52:00: Resumen del trade-off: capas inferiores son más eficientes; capas superiores son más seguras pero requieren mayor esfuerzo de desarrollo.
+
+1:52:00 - 1:56:00: Definición conceptual de criptografía: transformar información para que sea ininteligible sin la clave.
+
+1:56:00 - 2:00:00: Contexto sobre cuándo es habitual cifrar: retail vs. datos de alta criticidad (ej. historia clínica).
+
+2:00:00 - 2:04:00: Cifrado en tránsito (TLS/HTTPS) y la necesidad de protocolos robustos.
+
+2:04:00 - 2:08:00: Introducción a la Inyección. Concepto de engañar al intérprete (SQL, comandos) para ejecutar código malicioso.
+2:08:00 - 2:12:00: Se discuten estrategias de defensa contra la inyección. El profesor enfatiza que, al comprender y protegerse de los casos más básicos, el sistema queda generalmente cubierto ante ataques complejos.
+
+2:12:00 - 2:16:00: Demostración técnica de un ataque de SQL Injection concatenado. Se explica cómo un atacante puede cerrar una sentencia SELECT original para ejecutar instrucciones maliciosas, como un UPDATE de precios, seguido de una nueva consulta sintácticamente válida.
+
+2:16:00 - 2:20:00: Análisis de la peligrosidad de la inyección SQL: no solo permite robar datos, sino también manipular la integridad de la base de datos y abrir vectores de ataque adicionales en el sistema.
+
+2:20:00 - 2:44:00: (Segmento de clase donde se cubren otros puntos del Top 10). Se profundiza en el diseño inseguro y los desafíos de implementar medidas de seguridad robustas en organizaciones con presupuestos limitados (ej. PyMEs), donde el costo de duplicación o segregación de entornos puede ser un factor determinante.
+
+2:44:00 - 2:48:00: Inicio de Fallas de identificación y autenticación. Se analizan riesgos como la retención o caché de información sensible, la importancia de contraseñas robustas y la implementación de segundo factor de autenticación (2FA).
+
+2:48:00 - 2:52:00: Continuación sobre autenticación: gestión del ciclo de vida de las sesiones. Se destaca que las sesiones deben finalizar por inactividad o tiempo límite, evitando que un atacante pueda reutilizar identificadores de sesión robados.
+
+2:52:00 - 2:56:00: Fallos en la integridad de software y datos. Se introduce el riesgo de deserialización insegura, donde la manipulación de objetos serializados (ej. en PHP o Java) permite a un atacante inyectar código o alterar roles de usuario directamente en memoria.
+
+2:56:00 - 3:00:00: Cierre de la clase: se definen las expectativas para el parcial presencial (11 de mayo). Se aclara que los alumnos deben ser capaces de identificar escenarios de ataque y proponer medidas de mitigación basadas en el OWASP Top 10.
+
+3:00:00 - 3:01:31: Información final sobre el material de estudio: el profesor confirma que subirá los documentos del Top 10 (en inglés y traducción al español) a la plataforma para el cierre de la unidad 2 y la preparación del examen.

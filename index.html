@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumen: Seguridad y Calidad de Aplicaciones Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="minimal-header">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <h1>SCAW</h1>
+            <nav>
+                <a href="index.html"
+                    style="color: white; margin-right: 15px; text-decoration: underline; font-weight: 600;">Clase 1</a>
+                <a href="clase2.html" style="color: white; margin-right: 15px; text-decoration: none; font-weight: 600;">Clase 2</a>
+                <a href="clase3.html" style="color: white; margin-right: 15px; text-decoration: none; font-weight: 600;">Clase 3</a>
+                <a href="clase4.html" style="color: white; margin-right: 15px; text-decoration: none; font-weight: 600;">Clase 4</a>
+                <a href="clase5.html" style="color: white; text-decoration: none; font-weight: 600;">Clase 5</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container" id="content-container">
+        <section class="topic-section">
+            <h2>1. ¿Qué es la Información?</h2>
+            <div class="card">
+                <div class="icon-box">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                    </svg>
+                </div>
+                <p>Es un <strong>grupo de datos procesados y ordenados</strong> que sirven para construir un mensaje que
+                    <strong>cambia el estado de conocimiento</strong> del sujeto o sistema que lo recibe.</p>
+                <div class="example-box">
+                    <strong>Ejemplo:</strong> Decirle a un usuario "Contraseña incorrecta" le da información, pero
+                    decirle "El usuario no existe" le da a un posible atacante la <em>nueva información</em> de que ese
+                    usuario no es válido.
+                </div>
+            </div>
+        </section>
+
+        <section class="topic-section">
+            <h2>2. Características de la Información</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>🔴 Crítica</h3>
+                    <p>Es indispensable para que la organización opere. Si falta, la operación se detiene.</p>
+                    <div class="example-box"><strong>Ej.</strong> La temperatura de una máquina industrial. Si no se
+                        sabe, hay riesgo de accidente y debe detenerse.</div>
+                </div>
+                <div class="card">
+                    <h3>💎 Valiosa</h3>
+                    <p>Es un activo muy apreciado. Si falta, la empresa puede seguir operando, pero su pérdida afecta
+                        estratégicamente.</p>
+                    <div class="example-box"><strong>Ej.</strong> La receta de la Coca-Cola o las bonificaciones
+                        secretas a clientes VIP.</div>
+                </div>
+                <div class="card">
+                    <h3>👁️ Sensitiva</h3>
+                    <p>Información personal o que perfila a una persona. Solo deben verla los autorizados.</p>
+                    <div class="example-box"><strong>Ej.</strong> Historiales médicos, salarios, orientación política.
+                        Su filtración trae daños legales.</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="topic-section">
+            <h2>3. El Triángulo CID</h2>
+            <p>Representa los tres pilares de la seguridad en el manejo de información. Si modificas uno,
+                inevitablemente afectas a los otros.</p>
+
+            <div class="triangle-container">
+                <svg viewBox="0 0 200 200" width="200" height="200">
+                    <polygon points="100,20 180,160 20,160" fill="none" stroke="black" stroke-width="4" />
+                    <text x="100" y="40" text-anchor="middle" font-weight="bold" fill="black">C</text>
+                    <text x="30" y="165" text-anchor="middle" font-weight="bold" fill="black">I</text>
+                    <text x="170" y="165" text-anchor="middle" font-weight="bold" fill="black">D</text>
+                </svg>
+            </div>
+
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Confidencialidad</h3>
+                    <p>Garantiza que el dato es accedido <strong>solo por quien debe ser accedido</strong>.</p>
+                </div>
+                <div class="card">
+                    <h3>Integridad</h3>
+                    <p>El dato está en el estado esperado (no ha sido alterado indebidamente).</p>
+                    <div class="example-box"><strong>Ej.</strong> Si meto una naranja en una juguera, espero jugo
+                        (integridad dinámica). Si la dejo en la mesa, espero encontrarla entera (integridad estática).
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Disponibilidad</h3>
+                    <p>Qué tan fácil y rápido el usuario puede acceder a la información cuando la necesita.</p>
+                </div>
+            </div>
+            <div class="example-box black-box">
+                <strong>Relación Inversa:</strong> Un supermercado online tiene alta <em>Disponibilidad</em> (no pide
+                login para ver productos). Pero para comprar, exige login, bajando la disponibilidad para aumentar la
+                <em>Confidencialidad</em> e <em>Integridad</em> del pago.
+            </div>
+        </section>
+
+        <section class="topic-section">
+            <h2>4. ¿Qué es la Seguridad?</h2>
+            <div class="card">
+                <p>Etimológicamente, seguridad significa <strong>estar libre de peligros</strong>. Sin embargo,
+                    psicosocialmente es una <strong>percepción subjetiva</strong> (sentirse seguro).</p>
+                <div class="example-box">
+                    <strong>Peligro: Falsa Sensación de Seguridad</strong><br>
+                    Un software es seguro hoy, pero el entorno cambia (nuevas vulnerabilidades). Si no se invierte y
+                    actualiza constantemente, el cliente seguirá <em>sintiéndose</em> seguro aunque ya no lo esté. La
+                    seguridad es un proceso cíclico.
+                </div>
+            </div>
+        </section>
+
+        <section class="topic-section">
+            <h2>5. Seguridad de la Información vs Seguridad Informática</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>Seguridad de la Información</h3>
+                    <p><strong>Nivel Estratégico/Directivo</strong></p>
+                    <ul>
+                        <li>Define políticas, normativas y procesos.</li>
+                        <li>Gestión de riesgos y reglas de negocio.</li>
+                        <li>Ej: Decidir que al despedir a alguien se le bloquean los accesos.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Seguridad Informática</h3>
+                    <p><strong>Nivel Táctico/Operativo</strong></p>
+                    <ul>
+                        <li>Implementa medidas técnicas.</li>
+                        <li>Configuración de Firewalls, Antivirus, Hardening de servidores.</li>
+                        <li>Ej: El técnico que ejecuta el bloqueo de las cuentas en el sistema.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="topic-section">
+            <h2>6. Incidentes de Seguridad</h2>
+            <p>Cualquier violación que termine en destrucción, pérdida, alteración o acceso no autorizado a los datos.
+            </p>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>⚠️ Accidentales</h3>
+                    <p>Sin mala intención. Ocurren por negligencia o falta de políticas claras.</p>
+                    <div class="example-box"><strong>Ej.</strong> Dejar un repositorio público por error o subir una
+                        foto con la contraseña de fondo.</div>
+                </div>
+                <div class="card">
+                    <h3>👤 Internos</h3>
+                    <p>Abuso de confianza por miembros de la organización. Puede ser por beneficio propio o represalias.
+                    </p>
+                    <div class="example-box"><strong>Ej.</strong> Un empleado que descarga la base de datos de clientes
+                        antes de renunciar.</div>
+                </div>
+                <div class="card">
+                    <h3>🔥 Ciberataques</h3>
+                    <p>Intentos deliberados externos con alta complejidad y planificación.</p>
+                    <div class="example-box"><strong>Ej.</strong> <em>Stuxnet</em>, un malware creado por meses/años
+                        para dañar las centrifugadoras nucleares de Natanz.</div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

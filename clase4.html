@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCAW - Clase 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="minimal-header">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <h1>SCAW</h1>
+            <nav>
+                <a href="index.html"
+                    style="color: white; margin-right: 15px; text-decoration: none; font-weight: 600;">Clase 1</a>
+                <a href="clase2.html"
+                    style="color: white; margin-right: 15px; text-decoration: none; font-weight: 600;">Clase 2</a>
+                <a href="clase3.html"
+                    style="color: white; margin-right: 15px; text-decoration: underline; font-weight: 600;">Clase 3</a>
+                <a href="clase4.html"
+                    style="color: white; margin-right: 15px; text-decoration: none; font-weight: 600;">Clase 4</a>
+                <a href="clase5.html" style="color: white; text-decoration: none; font-weight: 600;">Clase 5</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <h2>Clase 4: Nube, Vulnerabilidades y Ataques</h2>
+            <p>Continuamos con la Unidad 2 analizando la infraestructura en la nube, los organismos que estandarizan
+                vulnerabilidades y cómo funcionan los ataques de denegación de servicio (DoS) y del lado del cliente.
+            </p>
+        </section>
+
+        <div class="grid-2">
+            <div class="card">
+                <h3>1. Seguridad en la Nube</h3>
+                <p>El debate sobre migrar infraestructura a proveedores de terceros.</p>
+                <ul>
+                    <li><strong>Ventajas:</strong> Escalabilidad bajo demanda, reducción de costos en infraestructura y
+                        administración centralizada.</li>
+                    <li><strong>Desventajas:</strong> Dependencia del proveedor (ej. caídas masivas en AWS o
+                        Cloudflare), y problemas de soberanía de los datos (no recomendable para secretos fiscales o
+                        seguridad nacional).</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>2. Áreas de Seguridad (Web)</h3>
+                <p>Al analizar Cliente, Red y Servidor, ¿cuál es más segura?</p>
+                <ul>
+                    <li><strong>El Servidor:</strong> Es considerada el área más segura porque es la única donde
+                        <strong>tenemos control total</strong> sobre las acciones de protección (como SSH y firewalls).
+                    </li>
+                    <li><strong>El Cliente:</strong> Es el área menos segura; no controlamos el entorno, ni cómo el
+                        navegador manipula o altera los datos enviados (ej. <em>Data Tampering</em>).</li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="card" style="margin-top: 2rem;">
+            <h3>3. Estandarización de Vulnerabilidades (MITRE y NIST)</h3>
+            <p>Organismos internacionales clasifican y puntúan las fallas de seguridad para estandarizar las defensas.
+            </p>
+            <div class="grid-3" style="margin-top: 1rem;">
+                <div class="example-box">
+                    <h4>CVE</h4>
+                    <p><strong>Common Vulnerabilities and Exposures</strong><br>Identificador único para
+                        vulnerabilidades en un <strong>producto específico</strong> (Ej. Angular versión 12). Permite
+                        colaborar y aplicar parches exactos.</p>
+                </div>
+                <div class="example-box">
+                    <h4>CWE</h4>
+                    <p><strong>Common Weakness Enumeration</strong><br>Identifica las <strong>malas prácticas de
+                            programación</strong> que causan vulnerabilidades (Ej. Falta de validación de entradas o
+                        Cross-Site Scripting).</p>
+                </div>
+                <div class="example-box">
+                    <h4>CVSS</h4>
+                    <p><strong>Common Vulnerability Scoring System</strong><br>Sistema que asigna una severidad (del 0
+                        al 10) a cada vulnerabilidad basándose en su impacto y facilidad de explotación.</p>
+                </div>
+            </div>
+            <p style="margin-top: 1rem;">Otras herramientas clave: <strong>CPE</strong> (Enumeración de Plataformas
+                Comunes) y <strong>NVD</strong> (Base de datos nacional de vulnerabilidades mantenida por el NIST).</p>
+        </section>
+
+        <section class="card" style="margin-top: 2rem;">
+            <h3>4. Ataques y Prevención</h3>
+
+            <h4 style="margin-top: 1rem;">Denegación de Servicio (DoS y DDoS)</h4>
+            <p>El objetivo es inhabilitar un sistema saturándolo de manera que no pueda responder a los usuarios
+                legítimos.</p>
+            <ul>
+                <li><strong>Por Volumen (Inundación):</strong> Inundar la red de paquetes masivamente usando Botnets
+                    (DDoS).</li>
+                <li><strong>Por Recursos (Aplicación):</strong> Agotar la memoria o CPU de un servidor forzando
+                    respuestas complejas de la aplicación.</li>
+                <li><strong>Low Rate:</strong> Utilizar una sola petición diseñada milimétricamente para explotar una
+                    vulnerabilidad y colgar el servidor.</li>
+            </ul>
+            <div class="example-box">
+                <strong>Prevención:</strong> Las mejores prácticas modernas incluyen el uso de <strong>CDNs</strong> y
+                <strong>WAF</strong> (Web Application Firewalls) para filtrar tráfico malicioso antes de que golpee la
+                red privada.
+            </div>
+
+            <h4 style="margin-top: 1.5rem;">Ataques del Lado del Cliente</h4>
+            <p>La seguridad del navegador no debe darse por sentada.</p>
+            <ul>
+                <li><strong>Data Tampering:</strong> Modificación no autorizada de parámetros antes de enviarlos al
+                    servidor.</li>
+                <li><strong>Malware y Ransomware:</strong> Programas que interceptan datos locales o cifran información
+                    extorsionando al propietario.</li>
+            </ul>
+        </section>
+
+        <section class="card" style="margin-top: 2rem;">
+            <h3>5. OWASP Top 10 (2025)</h3>
+            <p>Introducción al estándar actualizado que lista los 10 riesgos más críticos en aplicaciones web,
+                documentando fallas en control de acceso, inyección y diseño inseguro, que serán el foco de próximas
+                clases.</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

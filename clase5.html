@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCAW - Clase 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="minimal-header">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <h1>SCAW</h1>
+            <nav>
+                <a href="index.html"
+                    style="color: white; margin-right: 15px; text-decoration: none; font-weight: 600;">Clase 1</a>
+                <a href="clase2.html"
+                    style="color: white; margin-right: 15px; text-decoration: none; font-weight: 600;">Clase 2</a>
+                <a href="clase3.html"
+                    style="color: white; margin-right: 15px; text-decoration: underline; font-weight: 600;">Clase 3</a>
+                <a href="clase4.html"
+                    style="color: white; margin-right: 15px; text-decoration: none; font-weight: 600;">Clase 4</a>
+                <a href="clase5.html" style="color: white; text-decoration: none; font-weight: 600;">Clase 5</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <h2>Clase 5: OWASP Top 10 (2025) - Primera Parte</h2>
+            <p>Esta clase se centró en un análisis profundo del <strong>OWASP Top 10 (versión 2025)</strong>, el
+                estándar de la industria sobre los riesgos más críticos en aplicaciones web. A continuación, exploramos
+                las primeras 8 vulnerabilidades con ejemplos prácticos y tácticas de mitigación.</p>
+        </section>
+
+        <div class="grid-2">
+            <div class="card">
+                <h3>Repaso: Conceptos Iniciales y Fundamentos</h3>
+                <p>La clase comenzó con un repaso fundamental de conceptos previos (0:00 - 20:00):</p>
+                <ul>
+                    <li><strong>Debilidad vs Vulnerabilidad:</strong> Una <i>debilidad</i> (CWE) es un error genérico o
+                        mala práctica de programación, mientras que una <i>vulnerabilidad</i> (CVE) es la manifestación
+                        de esa debilidad en un producto específico y explotable.</li>
+                    <li><strong>Bases de Datos y Estandarización:</strong> Uso activo del <strong>NVD</strong> (National
+                        Vulnerability Database) y reportes de <strong>SISA/NIST</strong> para priorizar vulnerabilidades
+                        críticas ante el aumento del 200% de detecciones.</li>
+                    <li><strong>Ataques y Malware:</strong> Repaso de ataques de Denegación de Servicio (DoS/DDoS por
+                        <i>flooding</i>), <i>sniffing</i> en redes inalámbricas, ataques al cliente (ej. ejecución de
+                        JS, <i>tampering</i>) y clasificación de malware (<i>rootkits, backdoors, ransomware</i>).</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>01. Pérdida de Control de Acceso</h3>
+                <p>Ocurre cuando el servidor no valida adecuadamente si un usuario tiene permisos para acceder a un
+                    recurso específico, permitiendo acceso no autorizado.</p>
+                <ul>
+                    <li><strong>IDOR (Insecure Direct Object References):</strong> Modificar referencias directas en
+                        peticiones (ej. cambiar <code>id=5</code> a <code>id=4</code>) para ver información de otro
+                        usuario.</li>
+                    <li><strong>Ataques a la capa de visualización:</strong> Ocultar un botón de administrador en la
+                        interfaz no evita que un atacante descubra y acceda al endpoint directamente (<i>Security by
+                            Obscurity</i>).</li>
+                </ul>
+                <div class="example-box">
+                    <strong>Prevención:</strong>
+                    <br>- Usar <strong>referencias indirectas/relativas</strong> por sesión.
+                    <br>- Mapeo por diccionario o cifrado de IDs (ej. SAPI).
+                    <br>- Embeber recursos pequeños en <strong>Base64</strong>.
+                    <br>- Aplicar modelo de <strong>Lista Blanca</strong> (denegar por defecto).
+                    <br>- Invalidar tokens <strong>JWT</strong> al finalizar la sesión.
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>02. Configuración de Seguridad Incorrecta</h3>
+                <p>Resulta del uso de configuraciones predeterminadas, incompletas o diseñadas para entornos de
+                    desarrollo desplegadas en producción.</p>
+                <ul>
+                    <li><strong>Errores Comunes:</strong> Consolas de administración activas, mensajes de <i>debug</i>
+                        visibles, o falta de <i>hardening</i> en los servidores.</li>
+                    <li><strong>XXE (XML External Entities):</strong> Vulnerabilidad en el <i>parser</i> de XML. Un
+                        atacante inyecta entidades personalizadas (ej.
+                        <code>&lt;!ENTITY xxe SYSTEM "file:///etc/passwd"&gt;</code>) para leer archivos del servidor o
+                        causar DoS (apuntando a <code>/dev/random</code>).</li>
+                </ul>
+                <div class="example-box">
+                    <strong>Prevención XXE:</strong>
+                    <br>- Deshabilitar entidades externas en la JVM (<code>Javax.xml.accessExternalDTD</code>).
+                    <br>- Establecer límites de expansión de memoria (<code>EntityExpansionLimit</code>).
+                    <br>- Migrar a formatos más simples como JSON o YAML.
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>03. Fallas en la Cadena de Suministro</h3>
+                <p>Incorporar dependencias o librerías de terceros (vía NPM, PIP, Maven) que contienen vulnerabilidades
+                    conocidas, afectando todo el proyecto.</p>
+                <div class="example-box">
+                    <strong>Mitigación:</strong>
+                    <br>Implementar herramientas como <strong>Dependency Check</strong>, un plugin (ej. para Maven) que
+                    escanea las dependencias del proyecto y genera un reporte automático cruzando datos con el NVD y
+                    bases de CVEs para identificar riesgos altos.
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>04. Fallas Criptográficas</h3>
+                <p>Protección ineficiente de los datos sensibles tanto en tránsito como almacenados (en reposo).</p>
+                <ul>
+                    <li><strong>En Reposo (Almacenamiento):</strong> Cifrar a nivel de disco (BitLocker/LUKS) es
+                        eficiente pero vulnerable si se compromete el SO. Cifrar a <strong>nivel de aplicación</strong>
+                        es más seguro, pero impacta severamente la performance y el desarrollo.</li>
+                    <li><strong>Hash vs Cifrado:</strong> El <i>hash</i> (ej. contraseñas) es unidireccional y no tiene
+                        retorno. El cifrado es bidireccional (requiere claves).</li>
+                    <li><strong>En Tránsito:</strong> Obligatorio el uso de <strong>TLS/HTTPS</strong> para asegurar el
+                        canal de red.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>05. Inyección (Injection)</h3>
+                <p>Engañar al intérprete (SQL, Bash, LDAP) para que ejecute comandos no deseados.</p>
+                <ul>
+                    <li><strong>SQL Injection:</strong> Alterar la sintaxis para extraer tablas enteras (usando
+                        <code>UNION</code>) o modificar datos (ej. <code>UPDATE precio SET...</code> concatenando
+                        sentencias). <strong>Prevención:</strong> <i>Prepared Statements</i> y ORMs.</li>
+                    <li><strong>XSS (Cross-Site Scripting):</strong> Inyectar JavaScript malicioso (Reflejado,
+                        Almacenado o DOM). Ej: Insertar <code>&lt;span onmouseover="..."&gt;</code> en un foro público.
+                    </li>
+                    <li><strong>CSRF:</strong> Explotar una sesión activa del usuario cargando peticiones ocultas (ej.
+                        una imagen de 0x0) que ejecuta una transferencia sin que la víctima lo note.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>06. Diseño Inseguro</h3>
+                <p>Fallas arquitectónicas desde la concepción del sistema.</p>
+                <ul>
+                    <li>Procesos de negocio vulnerables por definición, como flujos de recuperación de contraseñas
+                        débiles o falta de aislamiento entre componentes de administración y la aplicación principal (en
+                        PyMEs a veces por limitación de presupuesto).</li>
+                </ul>
+                <div class="example-box">
+                    <strong>Prevención:</strong> Ciclo de desarrollo seguro y validación rigurosa de límites de negocio.
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>07. Fallas de Identificación y Autenticación</h3>
+                <p>Debilidades al verificar la identidad del usuario y gestionar su sesión a lo largo del tiempo.</p>
+                <ul>
+                    <li>Sesiones que no expiran por inactividad, facilitando el secuestro de sesión si el token es
+                        robado.</li>
+                    <li><strong>Prevención:</strong> Implementar <strong>Doble Factor de Autenticación (MFA)</strong>,
+                        no permitir contraseñas débiles y acortar el tiempo de vida de los tokens.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>08. Fallos de Integridad de Software y Datos</h3>
+                <p>Problemas por aceptar código o datos sin validar su origen ni su estructura, dando pie a malware o
+                    escalamiento de privilegios.</p>
+                <ul>
+                    <li><strong>Deserialización Insegura:</strong> Tomar datos binarios/texto (ej. en PHP:
+                        <code>s:4:"user"</code>), y alterar la cadena a <code>s:5:"admin"</code> antes de que el
+                        servidor lo suba a memoria como objeto.</li>
+                    <li><strong>Actualizaciones sin firmar:</strong> Riesgo de introducir parches maliciosos en la
+                        infraestructura.</li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

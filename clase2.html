@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumen: Seguridad y Calidad de Aplicaciones Web - Clase 2</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="minimal-header">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <h1>SCAW</h1>
+            <nav>
+                <a href="index.html" style="color: white; margin-right: 15px; text-decoration: none; font-weight: 600;">Clase 1</a>
+                <a href="clase2.html" style="color: white; margin-right: 15px; text-decoration: underline; font-weight: 600;">Clase 2</a>
+                <a href="clase3.html" style="color: white; margin-right: 15px; text-decoration: none; font-weight: 600;">Clase 3</a>
+                <a href="clase4.html" style="color: white; margin-right: 15px; text-decoration: none; font-weight: 600;">Clase 4</a>
+                <a href="clase5.html" style="color: white; text-decoration: none; font-weight: 600;">Clase 5</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container" id="content-container">
+        <!-- CLASE 2 -->
+        <div style="margin: 2rem 0 2rem; border-bottom: 4px solid var(--primary-color); padding-bottom: 0.5rem;">
+            <h2>📝 CLASE 2</h2>
+        </div>
+
+        <section class="topic-section">
+            <h2>7. Riesgo, Vulnerabilidad y Amenaza</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>🎯 Vulnerabilidad</h3>
+                    <p>Es una <strong>característica propia o debilidad interna</strong> del sistema que incrementa la probabilidad de que ocurra un efecto negativo.</p>
+                </div>
+                <div class="card">
+                    <h3>⚡ Riesgo</h3>
+                    <p>Es la <strong>probabilidad</strong> de que suceda un evento negativo que afecte a la organización o persona.</p>
+                </div>
+                <div class="card">
+                    <h3>⛈️ Amenaza</h3>
+                    <p>Es una <strong>condición externa</strong> al sistema que representa un peligro inminente y no se puede controlar directamente.</p>
+                </div>
+            </div>
+            <div class="example-box">
+                <strong>Analogía de la lluvia:</strong> Salir de casa implica el <em>riesgo</em> de mojarse. La lluvia es la <em>amenaza</em> (externa, incontrolable). No ser impermeable o salir sin paraguas es la <em>vulnerabilidad</em> (interna, solucionable).
+            </div>
+        </section>
+
+        <section class="topic-section">
+            <h2>8. Anonimato y No Repudio</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>👻 Anonimato</h3>
+                    <p>Es la incapacidad de vincular una acción con la persona o entidad que la realiza. No es inherentemente bueno ni malo, depende del contexto.</p>
+                    <div class="example-box">
+                        <strong>Deseable:</strong> Voto electrónico o denuncias anónimas.<br>
+                        <strong>No deseable:</strong> Transacciones bancarias.
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>⚖️ No Repudio</h3>
+                    <p>Garantiza que una acción no pueda ser negada (repudiada) por su emisor posterior a su ejecución, dejando evidencia verificable (ej. firmas digitales, tokens).</p>
+                    <div class="example-box">
+                        <strong>Deseable:</strong> Compras en MercadoLibre o transferencias.<br>
+                        <strong>No deseable:</strong> Periodistas en zonas hostiles que necesitan proteger sus fuentes.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="topic-section">
+            <h2>9. Estados de Inseguridad y Seguridad</h2>
+            <p>La seguridad como percepción está muy ligada a las acciones del usuario. Existen formas Activas y Pasivas de estar seguro o inseguro:</p>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>❌ Inseguridad Activa</h3>
+                    <p>El sistema está inseguro porque <strong>el usuario tomó una acción</strong> que lo expuso.</p>
+                    <div class="example-box"><strong>Ej.</strong> Desactivar el PIN del celular por comodidad o instalar un software crackeado.</div>
+                </div>
+                <div class="card">
+                    <h3>❌ Inseguridad Pasiva</h3>
+                    <p>El sistema está inseguro porque <strong>el usuario NO hizo nada</strong>, pero el sistema vino expuesto de fábrica o tiene fallas de diseño.</p>
+                    <div class="example-box"><strong>Ej.</strong> Comprar un dispositivo sin contraseña por defecto y nunca configurarla.</div>
+                </div>
+                <div class="card">
+                    <h3>✅ Seguridad Activa</h3>
+                    <p>El usuario <strong>toma una acción</strong> voluntaria para estar más protegido.</p>
+                    <div class="example-box"><strong>Ej.</strong> Habilitar la verificación en dos pasos (2FA) o buscar si su email fue filtrado (Have I Been Pwned).</div>
+                </div>
+                <div class="card">
+                    <h3>✅ Seguridad Pasiva</h3>
+                    <p>El usuario está protegido <strong>sin hacer nada</strong> porque el sistema lo implementa por defecto.</p>
+                    <div class="example-box"><strong>Ej.</strong> El celular obliga desde el primer uso a configurar un código de bloqueo o viene encriptado de fábrica.</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="topic-section">
+            <h2>10. Funciones de Hash y Contraseñas</h2>
+            <div class="card">
+                <p>El Hash es una función matemática <strong>unidireccional</strong>. Toma una entrada de tamaño variable y genera una salida de <strong>tamaño pequeño y fijo</strong> (ej. 256 bits). <br><em>No es un cifrado</em> porque no tiene llave ni puede revertirse (es como hacer un licuado: no puedes recuperar la fruta intacta).</p>
+                <ul>
+                    <li><strong>Colisiones:</strong> Como la salida es limitada y la entrada infinita, dos archivos distintos podrían generar el mismo hash, pero es probabilísticamente muy raro en algoritmos robustos.</li>
+                    <li><strong>Integridad:</strong> Se usa para verificar descargas de archivos pesados.</li>
+                </ul>
+                <div class="example-box black-box">
+                    <strong>Ataques por Diccionario y SALT:</strong><br>
+                    Si te roban la tabla de contraseñas hasheadas, no pueden revertirlas, pero pueden calcular hashes de palabras comunes ("123456", "password") y compararlos. Para evitar esto, se usa el <strong>SALT</strong> (añadir texto aleatorio como "perro" antes de hashear "password") para frustrar diccionarios precalculados.
+                </div>
+            </div>
+        </section>
+
+        <section class="topic-section">
+            <h2>11. Contenedores de Información y Seguridad Lógica</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>Sistemas Aislados vs Interconectados</h3>
+                    <p><strong>Aislados:</strong> Mayor seguridad física. No conectados a redes externas (ej. Plantas nucleares). Requieren acceso in-situ.<br>
+                    <strong>Interconectados:</strong> Mayor superficie de ataque, accesibles remotamente. Requieren robustas capas lógicas de autenticación.</p>
+                </div>
+                <div class="card">
+                    <h3>Logs de Auditoría vs Debugging</h3>
+                    <p>El log de <em>Debugging</em> sirve para encontrar errores de código (para programadores). El log de <em>Auditoría</em> reconstruye eventos (quién hizo qué y cuándo) y es el verdadero requisito para auditores de seguridad.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

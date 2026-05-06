@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumen: Seguridad y Calidad de Aplicaciones Web - Clase 3</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="minimal-header">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <h1>SCAW</h1>
+            <nav>
+                <a href="index.html" style="color: white; margin-right: 15px; text-decoration: none; font-weight: 600;">Clase 1</a>
+                <a href="clase2.html" style="color: white; margin-right: 15px; text-decoration: none; font-weight: 600;">Clase 2</a>
+                <a href="clase3.html" style="color: white; margin-right: 15px; text-decoration: underline; font-weight: 600;">Clase 3</a>
+                <a href="clase4.html" style="color: white; margin-right: 15px; text-decoration: none; font-weight: 600;">Clase 4</a>
+                <a href="clase5.html" style="color: white; text-decoration: none; font-weight: 600;">Clase 5</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container" id="content-container">
+        <!-- CLASE 3 -->
+        <div style="margin: 2rem 0 2rem; border-bottom: 4px solid var(--primary-color); padding-bottom: 0.5rem;">
+            <h2>📝 CLASE 3 (Cierre Unidad 1 e Inicio Unidad 2)</h2>
+        </div>
+
+        <section class="topic-section">
+            <h2>12. Copias de Seguridad (Backups)</h2>
+            <p>La estrategia de copias de seguridad es fundamental para la recuperación ante incidentes. Deben definirse políticas claras sobre frecuencia, soporte y rotación.</p>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Total (Completo)</h3>
+                    <p>Copia el 100% de los datos cada vez. Es el más rápido y seguro de restaurar, pero requiere mucho espacio de almacenamiento y tiempo de ejecución.</p>
+                </div>
+                <div class="card">
+                    <h3>Incremental</h3>
+                    <p>Guarda solo las diferencias desde el <strong>último backup</strong> (sea total o incremental). Rápido de crear, pero para restaurar requiere el backup total original más <em>todos</em> los incrementales en orden.</p>
+                </div>
+                <div class="card">
+                    <h3>Diferencial</h3>
+                    <p>Guarda las diferencias desde el <strong>último backup total</strong>. Ocupa más espacio que el incremental, pero para restaurar solo necesitas el total y el último diferencial.</p>
+                </div>
+            </div>
+            <div class="example-box black-box">
+                <strong>Pruebas de Restauración y Seguridad Física:</strong> No basta con hacer el backup, hay que probar que se puede restaurar en un tiempo aceptable. Además, el backup debe estar físicamente seguro (ej. en otra ubicación o "Iron Mountain") para protegerlo de incendios o robos.
+            </div>
+        </section>
+
+        <section class="topic-section">
+            <h2>13. Dispositivos y Trabajo Remoto</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>BYOD (Bring Your Own Device)</h3>
+                    <p>Política donde los empleados usan sus equipos personales. La empresa pierde control sobre el dispositivo, por lo que debe haber acuerdos firmados y segmentación lógica (certificados, software específico) para proteger la red empresarial.</p>
+                </div>
+                <div class="card">
+                    <h3>Dispositivos Corporativos y VPN</h3>
+                    <p>Si la empresa provee el equipo, tiene control total (software de monitoreo, bloqueos). En ambos casos, el acceso remoto debe estar asegurado mediante <strong>VPN (Red Privada Virtual)</strong> para cifrar la comunicación en redes inseguras.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="topic-section">
+            <h2>14. Concientización y Gestión de Seguridad</h2>
+            <p>Las mejores herramientas no sirven si el usuario es vulnerable. La seguridad es un proceso, no un evento aislado.</p>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>Campañas y Phishing Interno</h3>
+                    <p>Simular ataques de phishing ayuda a mantener al personal alerta y evaluar vulnerabilidades humanas. Se complementa con pósters, ferias tecnológicas e inducciones.</p>
+                </div>
+                <div class="card">
+                    <h3>Compliance vs. Seguridad Consciente</h3>
+                    <p>El <em>Compliance</em> es cumplir normativas solo por obligación ("hacerlo de mala gana"). La verdadera seguridad ocurre cuando la organización entiende que protege su propio negocio y reputación.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="topic-section">
+            <h2>15. Herramientas de Integridad (Anexo Práctico)</h2>
+            <p>El uso de algoritmos de hash (MD5, SHA-256) permite detectar modificaciones no autorizadas en sistemas de archivos.</p>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>OpenSSL</h3>
+                    <p>Herramienta estándar por consola para calcular hashes manualmente de archivos individuales y verificar su integridad.</p>
+                </div>
+                <div class="card">
+                    <h3>Hashdeep</h3>
+                    <p>Permite tomar una "foto" de un directorio (calculando múltiples hashes por archivo) para luego comparar y detectar qué archivos se añadieron, modificaron o borraron.</p>
+                </div>
+                <div class="card">
+                    <h3>AIDE / Tripwire</h3>
+                    <p>Herramientas avanzadas para servidores que ignoran archivos temporales, verifican permisos, y protegen la propia base de datos de hashes mediante cifrado y contraseñas.</p>
+                </div>
+            </div>
+        </section>
+
+        <div style="margin: 4rem 0 2rem; border-bottom: 4px solid var(--primary-color); padding-bottom: 0.5rem;">
+            <h2>📘 INICIO UNIDAD 2: Conceptos Técnicos</h2>
+        </div>
+
+        <section class="topic-section">
+            <h2>16. Nuevos Conceptos de la Unidad 2</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>💰 Daño</h3>
+                    <p>Falla o comportamiento inesperado que impacta a la organización. <strong>Debe ser cuantificable</strong> (generalmente en dinero). El mismo incidente técnico puede causar daños de magnitudes totalmente distintas en diferentes empresas.</p>
+                </div>
+                <div class="card">
+                    <h3>🛠️ Exploit</h3>
+                    <p>Es la <strong>técnica base o documento</strong> que explica cómo aprovechar una vulnerabilidad para generar un ataque. <em>No es necesariamente un programa ejecutable</em>, aunque luego alguien pueda programar una herramienta basada en él.</p>
+                </div>
+            </div>
+            
+            <h3 style="margin-top: 2rem;">Clasificación de Vulnerabilidades según su Origen</h3>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Diseño</h3>
+                    <p>Fallas en la arquitectura. Difíciles y costosas de arreglar si se detectan en etapas avanzadas.</p>
+                </div>
+                <div class="card">
+                    <h3>Implementación</h3>
+                    <p>Errores introducidos por los programadores (por inexperiencia, presión de tiempo, o distracción) al codificar.</p>
+                </div>
+                <div class="card">
+                    <h3>Uso</h3>
+                    <p>Vulnerabilidades generadas por las malas prácticas de los usuarios finales al operar el sistema.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

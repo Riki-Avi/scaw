@@ -1,0 +1,41 @@
+(0:00 - 4:00): Introducción de la tercera clase, repaso del calendario académico (parcial el 11 de mayo) y una revisión de conceptos fundamentales como riesgos, amenazas, no repudio, anonimato y vulnerabilidades.
+
+(4:00 - 8:00): Discusión profunda sobre las funciones de hash. Se definen como algoritmos unidireccionales (no reversibles) para integridad de datos, explicando el concepto de colisión y usos en contraseñas, búsqueda de datos y blockchain.
+
+(8:00 - 24:00): Repaso de seguridad lógica, controles de acceso, identificación y roles. (Nota: El tramo de 12:00 a 24:00 se enfoca en la gestión de políticas de seguridad, incluyendo la importancia de la protección física y lógica).
+
+(24:00 - 28:00): Análisis detallado de las copias de seguridad (backups). Se explican los inconvenientes de las copias totales en grandes volúmenes de datos y la necesidad de optimizar recursos.
+
+(28:00 - 32:00): Diferenciación entre copias diferenciales e incrementales. Se analiza la complejidad de restauración y cómo estas estrategias permiten ahorrar espacio y tiempo de procesamiento.
+
+(32:00 - 36:00): Importancia de las pruebas de restauración y la disciplina del usuario. Se discuten fallos comunes, como la pérdida de datos al no verificar qué archivos se están respaldando.
+
+(36:00 - 40:00): Ciclos de rotación de medios de almacenamiento y la gestión de ventanas de recuperación ante desastres.
+
+(40:00 - 52:00): Deterioro del hardware y políticas de eliminación segura de información al descartar discos o cintas de backup.
+
+(52:00 - 1:04:00): Gestión de activos y políticas de seguridad organizacional. Se profundiza en la gestión de infraestructura y el software necesario para dar soporte a la seguridad.
+
+(1:04:00 - 1:08:00): Campañas de concientización. Importancia de pósters, inducciones y el mantenimiento de hábitos de seguridad como un proceso recurrente y no como un evento único.
+
+(1:08:00 - 1:12:00): Simulacros de phishing como herramienta de evaluación y alerta dentro de las organizaciones.
+
+(1:12:00 - 1:16:00): Diferencia entre compliance (cumplimiento normativo) y seguridad consciente. El objetivo es evitar daños mayores mediante una cultura de seguridad proactiva.
+
+(1:16:00 - 1:20:00): Introducción al Framework de Ciberseguridad del NIST y sus seis categorías principales (Gobernar, identificar, proteger, detectar, responder y recuperar).
+
+(1:20:00 - 1:30:00): Resolución de dudas sobre los tipos de backup (total, diferencial, incremental) con ejemplos prácticos.
+
+(1:30:00 - 1:32:00): Pausa técnica.
+
+(1:32:00 - 1:44:00): Anexo práctico: Uso de OpenSSL para calcular hashes de archivos desde la consola y verificar integridad.
+
+(1:44:00 - 2:00:00): Discusión sobre por qué se utilizan múltiples algoritmos de hash (como MD5 y SHA-256) para robustecer la detección de alteraciones.
+
+(2:00:00 - 2:08:00): Introducción a herramientas de auditoría de integridad más avanzadas y los riesgos de dejar archivos de verificación en lugares accesibles para un atacante.
+
+(2:08:00 - 2:22:00): Presentación de AID (Advanced Intrusion Detection Environment) para barrido completo de servidores y configuración de reglas de inclusión/exclusión.
+
+(2:22:00 - 2:28:00): Resumen de la Unidad 1 y aclaraciones finales sobre el examen parcial.
+
+(2:28:00 - 2:43:55): Inicio de la Unidad 2. Enfoque técnico: tipos de ataque, malware y conceptos fundamentales como exploit y redefinición de vulnerabilidades en el contexto informático.
