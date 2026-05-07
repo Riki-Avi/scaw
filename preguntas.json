@@ -1,0 +1,1102 @@
+[
+  {
+    "id": 1,
+    "question": "¿Cuál es el objetivo principal de la Seguridad de la Información?",
+    "options": [
+      "Proteger únicamente los sistemas informáticos",
+      "Proteger la información y los sistemas que la procesan frente a accesos no autorizados",
+      "Garantizar que el hardware no falle físicamente",
+      "Desarrollar software libre de errores"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 2,
+    "question": "¿Qué pilar de la tríada CID garantiza que la información solo sea accesible por personas autorizadas?",
+    "options": [
+      "Disponibilidad",
+      "Integridad",
+      "Confidencialidad",
+      "Trazabilidad"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 3,
+    "question": "¿Qué pilar de la tríada CID asegura que la información no ha sido alterada de manera no autorizada?",
+    "options": [
+      "Integridad",
+      "Disponibilidad",
+      "Confidencialidad",
+      "Autenticidad"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 4,
+    "question": "¿Qué garantiza la Disponibilidad en el contexto de la seguridad?",
+    "options": [
+      "Que los datos estén cifrados en reposo",
+      "Que la información y los servicios estén accesibles cuando se requieran",
+      "Que los usuarios no puedan negar sus acciones",
+      "Que los sistemas no tengan vulnerabilidades"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 5,
+    "question": "¿Cuál es la diferencia principal entre Seguridad de la Información y Seguridad Informática (IT Security)?",
+    "options": [
+      "Son términos exactamente sinónimos",
+      "La Seguridad de la Información es táctica y la Informática es estratégica",
+      "La Seguridad de la Información abarca políticas estratégicas, mientras que la Informática se enfoca en la implementación técnica",
+      "La Seguridad Informática protege papel y la de Información protege datos digitales"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 6,
+    "question": "¿Cómo se clasifica una vulnerabilidad que surge desde la etapa de concepción del sistema?",
+    "options": [
+      "Vulnerabilidad de Implementación",
+      "Vulnerabilidad de Uso",
+      "Vulnerabilidad de Diseño",
+      "Vulnerabilidad de Operación"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 7,
+    "question": "¿Cómo se clasifica una vulnerabilidad causada por un error al codificar una funcionalidad bien diseñada?",
+    "options": [
+      "Vulnerabilidad de Diseño",
+      "Vulnerabilidad de Implementación",
+      "Vulnerabilidad de Operación",
+      "Vulnerabilidad Ambiental"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 8,
+    "question": "¿Qué tipo de vulnerabilidad se produce cuando un usuario elige una contraseña muy débil?",
+    "options": [
+      "Vulnerabilidad de Uso/Operación",
+      "Vulnerabilidad de Diseño",
+      "Vulnerabilidad de Implementación",
+      "Vulnerabilidad de Software"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 9,
+    "question": "¿Qué es el 'No repudio' en seguridad de la información?",
+    "options": [
+      "La incapacidad de un sistema para rechazar conexiones",
+      "La imposibilidad de negar la autoría o envío de un mensaje",
+      "El rechazo automático de paquetes maliciosos",
+      "La negación de un servicio a usuarios no registrados"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 10,
+    "question": "¿Qué propiedad asegura que se pueda conocer el historial de acciones realizadas por una entidad en el sistema?",
+    "options": [
+      "Trazabilidad (Auditoría)",
+      "Disponibilidad",
+      "Confidencialidad",
+      "No repudio"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 11,
+    "question": "¿Qué diferencia a la seguridad activa de la seguridad pasiva?",
+    "options": [
+      "La activa solo usa software, la pasiva usa hardware",
+      "La activa previene el incidente, la pasiva mitiga las consecuencias post-incidente",
+      "La activa requiere intervención humana constante, la pasiva no",
+      "No hay diferencia, son lo mismo"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 12,
+    "question": "¿Qué es un incidente de seguridad?",
+    "options": [
+      "Un evento adverso comprobado que compromete la CID de la información",
+      "Cualquier evento que ocurra en la red",
+      "La actualización planificada de un servidor",
+      "Un error de compilación en el código"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 13,
+    "question": "¿Qué es una Amenaza en el contexto del análisis de riesgos?",
+    "options": [
+      "Un fallo en el código fuente",
+      "Un evento potencial que puede causar daño si explota una vulnerabilidad",
+      "La probabilidad matemática de que un sistema falle",
+      "El costo monetario de un ataque"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 14,
+    "question": "¿Qué es el Riesgo en seguridad informática?",
+    "options": [
+      "La existencia de una amenaza",
+      "La existencia de una vulnerabilidad",
+      "La probabilidad de que una amenaza explote una vulnerabilidad causando un impacto",
+      "El daño físico a un servidor"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 15,
+    "question": "¿Cuál es la función principal de un algoritmo de Hash?",
+    "options": [
+      "Cifrar y descifrar mensajes",
+      "Comprimir archivos grandes",
+      "Generar una firma o huella digital única y de tamaño fijo a partir de datos de longitud variable",
+      "Ocultar direcciones IP"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 16,
+    "question": "¿Por qué las funciones Hash se consideran unidireccionales?",
+    "options": [
+      "Porque solo funcionan en redes locales",
+      "Porque es computacionalmente inviable obtener el archivo original a partir de su hash",
+      "Porque solo las puede generar el administrador",
+      "Porque no pueden ser enviadas por internet"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 17,
+    "question": "¿Qué pilar de seguridad protegen principalmente las funciones Hash?",
+    "options": [
+      "Confidencialidad",
+      "Disponibilidad",
+      "Integridad",
+      "Autenticidad"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 18,
+    "question": "¿Qué significa la 'autenticación de dos factores' (2FA)?",
+    "options": [
+      "Usar dos contraseñas diferentes",
+      "Validar la identidad combinando dos de tres tipos de factores: algo que sabes, algo que tienes o algo que eres",
+      "Requerir que dos administradores aprueben el login",
+      "Usar el doble de caracteres en la contraseña"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 19,
+    "question": "¿Cuál de los siguientes es un ejemplo de control de seguridad 'detectivo'?",
+    "options": [
+      "Un firewall",
+      "Una política de contraseñas robustas",
+      "Un sistema de monitoreo de logs o IDS (Intrusion Detection System)",
+      "Un backup restaurado"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 20,
+    "question": "¿Cuál de los siguientes es un ejemplo de control de seguridad 'correctivo'?",
+    "options": [
+      "Un antivirus eliminando un malware detectado",
+      "Un candado en la puerta del servidor",
+      "Un detector de humo",
+      "La capacitación a empleados"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 21,
+    "question": "¿Qué diferencia un backup incremental de uno diferencial?",
+    "options": [
+      "No hay diferencia, son lo mismo",
+      "El incremental guarda los cambios desde el último backup (cualquiera), el diferencial guarda los cambios desde el último backup completo",
+      "El diferencial guarda los cambios desde el último backup incremental, el incremental desde el completo",
+      "El incremental guarda datos en la nube y el diferencial en cinta"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 22,
+    "question": "¿Cuál es la principal ventaja de un backup incremental?",
+    "options": [
+      "Requiere más espacio de almacenamiento",
+      "Es el más rápido de restaurar",
+      "Es el más rápido de realizar y ocupa menos espacio diario",
+      "No requiere de un backup completo inicial"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 23,
+    "question": "¿Cuál es la principal ventaja de un backup diferencial respecto al incremental al momento de restaurar?",
+    "options": [
+      "Es más lento de restaurar",
+      "Solo requiere el backup completo y el último diferencial, haciendo la restauración más rápida",
+      "Ocupa menos espacio en disco",
+      "No se puede restaurar sin todos los backups diarios"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 24,
+    "question": "¿Qué herramienta técnica por línea de comandos se utiliza frecuentemente para auditar la integridad masiva de archivos usando hashes?",
+    "options": [
+      "Ping",
+      "Traceroute",
+      "Hashdeep",
+      "Nmap"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 25,
+    "question": "¿Qué es un 'Exploit'?",
+    "options": [
+      "Una herramienta de defensa de redes",
+      "Un software o secuencia de comandos que aprovecha una vulnerabilidad para provocar un comportamiento no deseado",
+      "Una base de datos de contraseñas",
+      "Un algoritmo de cifrado asimétrico"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 26,
+    "question": "¿Cuál es la diferencia conceptual entre Daño y Vulnerabilidad?",
+    "options": [
+      "El daño es la debilidad, la vulnerabilidad es la consecuencia",
+      "La vulnerabilidad es la debilidad en el sistema; el daño es el impacto negativo materializado si la vulnerabilidad es explotada",
+      "Ambos son términos sinónimos en análisis de riesgo",
+      "El daño solo afecta hardware, la vulnerabilidad solo afecta software"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 27,
+    "question": "En la arquitectura Cloud, ¿Qué es IaaS?",
+    "options": [
+      "Identity as a Service",
+      "Information as a Service",
+      "Infrastructure as a Service",
+      "Integration as a Service"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 28,
+    "question": "En un modelo SaaS (Software as a Service), ¿quién es el principal responsable de la seguridad de la infraestructura subyacente?",
+    "options": [
+      "El cliente final",
+      "El proveedor del servicio Cloud",
+      "Un auditor externo",
+      "El administrador de red de la empresa cliente"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 29,
+    "question": "¿Por qué se considera al Servidor como el área de despliegue más segura en una aplicación web?",
+    "options": [
+      "Porque los servidores no tienen conexión a internet",
+      "Porque es el único entorno donde la organización tiene control total sobre configuraciones, acceso y firewalls",
+      "Porque los navegadores bloquean todos los ataques al servidor",
+      "Porque el hardware de servidor no puede fallar"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 30,
+    "question": "¿Por qué se considera al Cliente (Navegador) como el área menos segura?",
+    "options": [
+      "Porque los navegadores son lentos",
+      "Porque el entorno está bajo el control total del usuario, permitiéndole modificar o interceptar datos antes de enviarlos",
+      "Porque usa JavaScript en lugar de Java",
+      "Porque no soporta HTTPS"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 31,
+    "question": "¿Qué representa el acrónimo CVE en estandarización de vulnerabilidades?",
+    "options": [
+      "Common Virus Engine",
+      "Critical Vulnerability Enumeration",
+      "Common Vulnerabilities and Exposures",
+      "Common Vector Extraction"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 32,
+    "question": "¿Cuál es la función del catálogo CVE?",
+    "options": [
+      "Proveer un identificador único y estandarizado para vulnerabilidades específicas en productos de software conocidos",
+      "Medir la velocidad de una red",
+      "Escanear virus en computadoras locales",
+      "Bloquear ataques en tiempo real"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 33,
+    "question": "¿Qué representa el acrónimo CWE?",
+    "options": [
+      "Common Weakness Enumeration",
+      "Common Web Exceptions",
+      "Critical Web Errors",
+      "Cross Website Exploitation"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 34,
+    "question": "¿Cuál es la diferencia estricta entre CWE y CVE?",
+    "options": [
+      "No hay diferencia, son estándares paralelos",
+      "CWE identifica vulnerabilidades en hardware, CVE en software",
+      "CWE clasifica debilidades genéricas de programación/diseño, mientras que CVE identifica casos reales en productos específicos",
+      "CWE es un firewall y CVE es un antivirus"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 35,
+    "question": "¿Para qué sirve el sistema CVSS?",
+    "options": [
+      "Para enumerar vulnerabilidades",
+      "Para puntuar la severidad de una vulnerabilidad en una escala estandarizada (ej. 0 al 10)",
+      "Para corregir automáticamente el código fuente",
+      "Para verificar firmas digitales"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 36,
+    "question": "¿Qué es la NVD (National Vulnerability Database)?",
+    "options": [
+      "Un motor de base de datos relacional open source",
+      "Un antivirus mantenido por el gobierno de EE.UU.",
+      "El repositorio oficial del gobierno de EE.UU. mantenido por el NIST que centraliza, analiza y enriquece los datos de CVEs",
+      "Una red privada para hackers"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 37,
+    "question": "¿Qué permite estandarizar el diccionario CPE (Common Platform Enumeration)?",
+    "options": [
+      "Nombres estructurados de plataformas de hardware, sistemas operativos y aplicaciones",
+      "Los lenguajes de programación de las aplicaciones web",
+      "Los algoritmos de cifrado de la nube",
+      "Los puertos de red abiertos"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 38,
+    "question": "¿Cuál es el objetivo principal de un ataque de Denegación de Servicio (DoS)?",
+    "options": [
+      "Robar datos de tarjetas de crédito",
+      "Inhabilitar un sistema o red saturándolo para que no pueda responder a usuarios legítimos",
+      "Cifrar el disco rígido y pedir rescate",
+      "Inyectar código malicioso en la base de datos"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 39,
+    "question": "¿Qué diferencia a un ataque DDoS de un DoS tradicional?",
+    "options": [
+      "DDoS usa un solo servidor potente",
+      "DDoS roba datos además de tumbar el servicio",
+      "DDoS (Distribuido) utiliza múltiples sistemas de origen (botnet) para inundar al objetivo",
+      "DDoS solo afecta a servidores Windows"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 40,
+    "question": "¿En qué consiste un ataque DoS de tipo 'Low Rate' (o de baja tasa)?",
+    "options": [
+      "En enviar terabytes de basura por segundo",
+      "En usar una sola o pocas peticiones cuidadosamente diseñadas para explotar una vulnerabilidad y agotar la CPU/memoria",
+      "En desconectar físicamente el cable de red",
+      "En atacar durante la madrugada cuando hay poco tráfico"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 41,
+    "question": "¿Qué es un Botnet en el contexto de un ataque DDoS?",
+    "options": [
+      "Un protocolo de red seguro",
+      "Una red de equipos infectados y controlados remotamente por el atacante para lanzar el ataque",
+      "El firewall que protege contra ataques",
+      "Un conjunto de servidores redundantes de la víctima"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 42,
+    "question": "¿Cómo ayuda un WAF (Web Application Firewall) a mitigar ataques DoS?",
+    "options": [
+      "Desconectando internet automáticamente",
+      "Cifrando la base de datos",
+      "Filtrando y analizando tráfico malicioso a nivel de aplicación HTTP antes de que golpee el servidor",
+      "Generando más ancho de banda al instante"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 43,
+    "question": "¿Qué técnica describe el 'Sniffing' en redes informáticas?",
+    "options": [
+      "La inyección de comandos SQL",
+      "La intercepción pasiva y lectura de paquetes de red que viajan sin cifrar",
+      "La modificación de la dirección MAC",
+      "El borrado de logs del sistema"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 44,
+    "question": "¿Cuál es la forma más efectiva de evitar ataques de sniffing de información confidencial en tránsito?",
+    "options": [
+      "Ocultar la red Wi-Fi",
+      "Usar contraseñas largas",
+      "Cifrar las comunicaciones de red mediante protocolos como TLS (HTTPS)",
+      "Apagar el servidor de noche"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 45,
+    "question": "¿Qué es el 'Data Tampering' en el contexto de seguridad del lado del cliente?",
+    "options": [
+      "El cifrado asimétrico de datos locales",
+      "La modificación maliciosa de parámetros en el navegador antes de que la petición se envíe al servidor",
+      "Un ataque de fuerza bruta a contraseñas",
+      "El uso de redes VPN"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 46,
+    "question": "¿Cuál de las siguientes categorías de malware secuestra el sistema o sus datos exigiéndo un pago para liberarlos?",
+    "options": [
+      "Rootkit",
+      "Ransomware",
+      "Keylogger",
+      "Backdoor"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 47,
+    "question": "¿Qué caracteriza a un 'Rootkit'?",
+    "options": [
+      "Se replica enviando correos masivos",
+      "Registra las pulsaciones de teclado",
+      "Modifica capas profundas del sistema operativo para ocultar su propia existencia y asegurar acceso privilegiado persistente",
+      "Bloquea el acceso a la base de datos"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 48,
+    "question": "¿Qué propósito tiene un 'Backdoor' (Puerta Trasera) en seguridad?",
+    "options": [
+      "Acelerar las peticiones HTTP",
+      "Evadir los mecanismos normales de autenticación para otorgar acceso subrepticio a un atacante",
+      "Realizar backups automáticos",
+      "Cifrar el tráfico de red de salida"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 49,
+    "question": "¿Qué objetivo tiene el proyecto OWASP Top 10?",
+    "options": [
+      "Vender firewalls de aplicaciones",
+      "Proporcionar un listado de los 10 lenguajes de programación más seguros",
+      "Concientizar estandarizando y clasificando los 10 riesgos de seguridad más críticos en aplicaciones web",
+      "Ser un antivirus gratuito"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 50,
+    "question": "¿Según el OWASP Top 10, qué implica la vulnerabilidad 'Broken Access Control' (Pérdida de control de acceso)?",
+    "options": [
+      "Que el servidor de base de datos se apagó",
+      "Que un usuario puede ejecutar acciones fuera de sus privilegios previstos, accediendo a datos de otros o funcionalidades administrativas",
+      "Que se perdieron las contraseñas del sistema",
+      "Que el firewall de red permite todo el tráfico entrante"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 51,
+    "question": "¿Qué tipo de ataque ocurre cuando una aplicación utiliza entradas de usuario para acceder directamente a un objeto sin verificar permisos (IDOR)?",
+    "options": [
+      "Inyección SQL",
+      "Pérdida de Control de Acceso (Broken Access Control)",
+      "Cross-Site Scripting",
+      "Falla Criptográfica"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 52,
+    "question": "¿Cuál es una técnica recomendada para prevenir IDOR (Insecure Direct Object References)?",
+    "options": [
+      "Usar HTTPS",
+      "Ocultar el botón en la interfaz",
+      "Utilizar referencias indirectas/relativas por usuario o mapeo (ej. SAPI) y validar en el backend",
+      "Aumentar el ancho de banda del servidor"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 53,
+    "question": "¿Por qué es ineficaz la técnica 'Security by Obscurity' (Seguridad por oscuridad) en la capa de visualización web?",
+    "options": [
+      "Porque consume mucha memoria del cliente",
+      "Porque un atacante puede inspeccionar el DOM o interceptar peticiones, descubriendo flujos ocultos o no dibujados en pantalla",
+      "Porque hace que la web cargue más lento",
+      "Porque los navegadores bloquean el contenido oculto automáticamente"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 54,
+    "question": "¿En qué se basa la vulnerabilidad de 'Security Misconfiguration' (Configuración de Seguridad Incorrecta)?",
+    "options": [
+      "En fallos lógicos en el diseño de base de datos",
+      "En el uso de configuraciones predeterminadas, contraseñas por defecto o dejar expuestas opciones de debug en producción",
+      "En robar tokens de sesión por red",
+      "En usar librerías de terceros desactualizadas"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 55,
+    "question": "¿Cuál de estos es un ejemplo clásico de Security Misconfiguration?",
+    "options": [
+      "Dejar activa la consola de administración de un servidor de aplicaciones web en un entorno de producción",
+      "Olvidar usar sentencias preparadas en SQL",
+      "No validar que un número sea positivo",
+      "Usar HTTP en lugar de HTTPS"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 56,
+    "question": "¿Qué representa la vulnerabilidad XXE (XML External Entities)?",
+    "options": [
+      "Inyectar código CSS malicioso",
+      "Interferir en el procesamiento de datos XML para forzar al parser a leer archivos locales o interactuar con la red interna",
+      "Crear entidades HTML inválidas",
+      "Usar XML en lugar de JSON"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 57,
+    "question": "¿Cómo se mitiga principalmente la vulnerabilidad XXE en Java o parsers XML?",
+    "options": [
+      "Usando contraseñas seguras",
+      "Cambiando a base de datos NoSQL",
+      "Deshabilitando la capacidad del parser de resolver entidades externas (DTDs)",
+      "Cifrando el archivo XML en el cliente antes de enviarlo"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 58,
+    "question": "¿Qué ataque busca explotar la vulnerabilidad de la 'Cadena de suministro de software' (Vulnerable Components)?",
+    "options": [
+      "Fuerza bruta contra el login del administrador",
+      "El compromiso del proyecto por incluir librerías o dependencias de terceros (vía NPM, Maven, etc.) que contienen vulnerabilidades conocidas",
+      "La inyección de comandos en el firewall físico",
+      "Un ataque de phishing a los desarrolladores"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 59,
+    "question": "¿Qué herramienta técnica automatizada se utiliza habitualmente en CI/CD para detectar componentes vulnerables en la cadena de suministro?",
+    "options": [
+      "Wireshark",
+      "Dependency Check (ej. de OWASP) cruzando datos con el NVD",
+      "Nmap",
+      "Postman"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 60,
+    "question": "¿Qué describe mejor una Falla Criptográfica (Cryptographic Failure)?",
+    "options": [
+      "Error al compilar el código fuente",
+      "La exposición de datos sensibles debido a la falta de cifrado, uso de algoritmos débiles o mala gestión de claves",
+      "Cuando un hash genera un texto de la misma longitud",
+      "La incapacidad de conectarse a una VPN"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 61,
+    "question": "¿Cuál es el riesgo de delegar el cifrado de datos críticos únicamente a la capa de disco del sistema operativo (ej. BitLocker)?",
+    "options": [
+      "Es demasiado lento para aplicaciones modernas",
+      "Cifrar el disco corrompe los archivos de log",
+      "Que si un atacante obtiene acceso al sistema operativo encendido o a la base de datos, leerá la información desencriptada ('on-the-fly')",
+      "No es compatible con bases de datos relacionales"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 62,
+    "question": "¿Por qué cifrar la información sensible a 'nivel de aplicación' es más seguro pero menos adoptado?",
+    "options": [
+      "Porque requiere mucho menos conocimiento técnico",
+      "Porque los datos quedan inaccesibles incluso si roban la base de datos entera, pero impacta negativamente la performance y aumenta la complejidad",
+      "Porque no es compatible con el estándar AES",
+      "Porque es vulnerable a ataques de denegación de servicio de red"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 63,
+    "question": "¿Qué protocolo es indispensable para mitigar fallas criptográficas en datos en 'tránsito'?",
+    "options": [
+      "FTP",
+      "Telnet",
+      "TLS/HTTPS",
+      "HTTP"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 64,
+    "question": "¿Cuál es la premisa básica de un ataque de Inyección (Injection)?",
+    "options": [
+      "Sobrecargar la memoria del servidor",
+      "Adivinar contraseñas probando miles de combinaciones",
+      "Introducir datos no confiables a un intérprete para engañarlo y que ejecute comandos no previstos por el programador",
+      "Alterar el CSS de la página para que se vea deformada"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 65,
+    "question": "¿Qué ocurre específicamente en un ataque de Inyección SQL (SQLi)?",
+    "options": [
+      "Se ejecuta JavaScript en el navegador",
+      "Se altera la consulta de base de datos manipulando los parámetros de entrada, pudiendo extraer, modificar o borrar información no autorizada",
+      "Se inyectan comandos de Bash en el sistema operativo Linux",
+      "Se sube un archivo ejecutable malicioso al servidor web"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 66,
+    "question": "¿Cuál es la técnica moderna más recomendada para evitar completamente la Inyección SQL?",
+    "options": [
+      "Prohibir el carácter de comilla simple (') mediante JavaScript en el cliente",
+      "Cifrar la base de datos completa",
+      "El uso de Consultas Parametrizadas (Prepared Statements) o frameworks ORM, para que el dato nunca se interprete como código",
+      "Ocultar los mensajes de error de la base de datos"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 67,
+    "question": "¿Qué ataque se define como 'la ejecución de scripts maliciosos en el navegador de una víctima forzados por la aplicación web'?",
+    "options": [
+      "Cross-Site Request Forgery (CSRF)",
+      "Inyección SQL (SQLi)",
+      "Inyección XML (XXE)",
+      "Cross-Site Scripting (XSS)"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": 68,
+    "question": "¿Qué caracteriza a un ataque XSS 'Almacenado' (Stored XSS)?",
+    "options": [
+      "El script malicioso se inyecta en la URL momentáneamente",
+      "El script malicioso se guarda persistentemente en el servidor (ej. en un comentario de foro) y se ejecuta cuando cualquier usuario accede al recurso",
+      "El ataque ocurre sin interacción del navegador",
+      "Se almacenan las contraseñas en texto plano"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 69,
+    "question": "¿Qué ataque se basa en forzar a un usuario autenticado a ejecutar una petición no deseada en una aplicación web en la cual confía?",
+    "options": [
+      "XSS (Cross-Site Scripting)",
+      "CSRF (Cross-Site Request Forgery)",
+      "IDOR (Insecure Direct Object Reference)",
+      "DDoS (Distributed Denial of Service)"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 70,
+    "question": "¿Qué técnica es comúnmente usada para explotar CSRF de forma silenciosa desde otra web?",
+    "options": [
+      "Inyectar una imagen de tamaño 0x0 apuntando al endpoint de la acción sensible (ej. una transferencia bancaria)",
+      "Adivinar la contraseña del administrador",
+      "Envíar un ataque por fuerza bruta",
+      "Borrar las cookies del navegador del usuario"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 71,
+    "question": "¿Cómo los frameworks web modernos mitigan el CSRF automáticamente?",
+    "options": [
+      "Eliminando las sesiones HTTP",
+      "Insertando un token único, impredecible y sincronizado (Token CSRF) en los formularios, validándolo en cada petición sensible",
+      "Codificando en Base64 el nombre de usuario",
+      "Aumentando el tiempo de timeout de la base de datos"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 72,
+    "question": "¿Qué engloba la vulnerabilidad de 'Diseño Inseguro' (Insecure Design)?",
+    "options": [
+      "Uso de colores de bajo contraste en el frontend",
+      "Fallos a nivel arquitectónico y conceptual del sistema, donde la lógica de negocio es débil o no se plantearon límites ni medidas preventivas desde el inicio",
+      "Errores de sintaxis en el código fuente",
+      "No minificar los archivos JavaScript en producción"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 73,
+    "question": "¿Cuál es un ejemplo clásico de Diseño Inseguro en una aplicación web?",
+    "options": [
+      "Un flujo de recuperación de contraseña que envía la clave actual en texto plano al correo del usuario",
+      "Dejar un puerto de base de datos abierto por error de red",
+      "No actualizar la versión del framework a tiempo",
+      "Concatenar strings en sentencias SQL"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 74,
+    "question": "¿A qué hace referencia la vulnerabilidad de 'Fallas de Identificación y Autenticación'?",
+    "options": [
+      "A que el servidor no puede reconocer la base de datos",
+      "A la incapacidad del sistema para confirmar fehacientemente la identidad del usuario y gestionar correctamente el ciclo de vida de su sesión",
+      "Al uso de certificados SSL vencidos",
+      "A fallas en el firewall al identificar la IP origen"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 75,
+    "question": "¿Qué mala práctica en la gestión de sesiones fomenta el secuestro de la misma?",
+    "options": [
+      "Permitir múltiples sesiones simultáneas",
+      "No invalidar el ID de sesión tras el cierre (logout) o no implementar un tiempo máximo de inactividad (timeout)",
+      "Crear IDs de sesión alfanuméricos largos",
+      "Usar HTTPS para transferir las cookies"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 76,
+    "question": "¿En la vulnerabilidad de 'Fallos de Integridad de Software y Datos', cuál es el principal riesgo de las actualizaciones sin firmar?",
+    "options": [
+      "Que no se instalan automáticamente",
+      "Que ocupan más espacio en el disco",
+      "Que un atacante intercepte la descarga y reemplace la actualización con malware, infectando al sistema sin que este detecte el cambio",
+      "Que el software pierda compatibilidad con el sistema operativo"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 77,
+    "question": "¿Qué ocurre durante una 'Deserialización Insegura'?",
+    "options": [
+      "El sistema descomprime un archivo ZIP dañado",
+      "El servidor toma un bloque de datos estructurado (serializado) proveído por un atacante y lo reconstruye (instancia en memoria) sin validar su contenido ni origen",
+      "El navegador no puede convertir JSON a objetos nativos",
+      "Un algoritmo de cifrado falla al reconstruir el texto original"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 78,
+    "question": "¿Cuál es un impacto directo de manipular objetos en una Deserialización Insegura (ej. cambiar atributos de rol en una cadena binaria/texto)?",
+    "options": [
+      "Hacer que el servidor cargue más rápido",
+      "Escalamiento de privilegios o ejecución de código remoto (RCE) directo en la memoria del servidor",
+      "Forzar al usuario a descargar un archivo",
+      "Bypass del firewall de capa de red"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 79,
+    "question": "¿Por qué es crucial implementar la política de 'Denegar por Defecto' (Lista Blanca) al validar entradas de datos?",
+    "options": [
+      "Porque requiere menos líneas de código",
+      "Porque una 'Lista Negra' nunca puede prever todas las posibles combinaciones maliciosas futuras, mientras que la Lista Blanca solo acepta lo estrictamente esperado",
+      "Porque mejora el tiempo de respuesta del servidor web",
+      "Porque es un requisito legal de todas las normativas"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 80,
+    "question": "En el contexto de JWT (JSON Web Tokens), ¿por qué es crítico invalidarlos del lado del servidor tras el cierre de sesión?",
+    "options": [
+      "Porque los JWT caducan automáticamente a los 5 segundos",
+      "Porque, si no se maneja en el backend, un token robado seguirá siendo matemáticamente válido hasta su fecha de expiración configurada",
+      "Para liberar espacio en la base de datos local",
+      "Para que el navegador borre su caché"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 81,
+    "question": "De acuerdo con los principios de desarrollo seguro, si necesitas evitar usar entidades en XML debido a su vulnerabilidad (XXE), una alternativa razonable es:",
+    "options": [
+      "Utilizar un lenguaje de marcado más simple que no soporte entidades DTD complejas, como JSON o YAML",
+      "Codificar todo el archivo XML en Base64 y seguir usando DTD",
+      "Cifrar el XML con un hash",
+      "Usar CSV para todas las transferencias de red complejas"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 82,
+    "question": "¿Qué significa que el vector de ataque esté en la 'superficie de ataque'?",
+    "options": [
+      "Que el ataque es superficial y no causa daño",
+      "Que el atacante utiliza las partes del sistema que están expuestas e interactivas con usuarios o sistemas externos para ingresar",
+      "Que ataca exclusivamente las interfaces gráficas",
+      "Que el vector de ataque está en el hardware del monitor"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 83,
+    "question": "¿Qué factor incrementa la 'Explotabilidad' de una vulnerabilidad en los estándares de riesgo (como CVSS)?",
+    "options": [
+      "Requerir que el atacante esté en la misma red física local y autenticado",
+      "Que el atacante necesite escribir miles de líneas de código complejo para atacarlo",
+      "Que el ataque pueda realizarse de manera remota a través de internet sin requerir autenticación previa",
+      "Que el ataque requiera ingeniería social avanzada"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 84,
+    "question": "¿Qué concepto define a 'la posibilidad de rastrear, monitorear y registrar eventos en un sistema de información'?",
+    "options": [
+      "Confidencialidad",
+      "Integridad",
+      "Auditoría/Trazabilidad",
+      "Cifrado simétrico"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 85,
+    "question": "¿Qué mecanismo se usa para garantizar el 'No repudio'?",
+    "options": [
+      "Firewall de red",
+      "Firmas digitales (criptografía asimétrica) y trazabilidad confiable",
+      "Bloqueo de direcciones IP maliciosas",
+      "Cifrado a nivel de disco"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 86,
+    "question": "¿Cuál es la consecuencia principal de una pérdida de 'Integridad' en una base de datos médica?",
+    "options": [
+      "Que los médicos no puedan iniciar sesión",
+      "Que alguien lea qué enfermedades tiene un paciente famoso",
+      "Que se modifique la historia clínica de un paciente induciendo a un diagnóstico o tratamiento erróneo",
+      "Que el servidor se quede sin espacio"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 87,
+    "question": "¿A qué categoría de controles de seguridad pertenece el uso de un UPS (Sistema de alimentación ininterrumpida) para prevenir caídas de servidores?",
+    "options": [
+      "Control de software",
+      "Control lógico / técnico",
+      "Control físico (Preventivo)",
+      "Control administrativo (Procedimientos)"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 88,
+    "question": "¿Qué rol cumple un CERT / CSIRT en una organización moderna?",
+    "options": [
+      "Desarrollar el software de las bases de datos",
+      "Ser el equipo responsable de responder y gestionar los incidentes críticos de ciberseguridad a nivel organizacional",
+      "Vender firewalls a otras empresas",
+      "Reemplazar completamente al departamento de redes"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 89,
+    "question": "¿Por qué el almacenamiento de contraseñas en texto plano es una vulnerabilidad crítica?",
+    "options": [
+      "Porque ocupa más bytes en la base de datos",
+      "Porque viola el principio de confidencialidad, exponiendo todas las cuentas en caso de una filtración (dump) de la base de datos",
+      "Porque hace que la consulta SQL sea más lenta",
+      "Porque los navegadores rechazan enviar contraseñas que se almacenan en texto plano"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 90,
+    "question": "¿Qué recomienda el estándar OWASP sobre los mensajes de error en una aplicación en producción?",
+    "options": [
+      "Mostrar siempre el Stack Trace de Java o PHP para ayudar al atacante a depurar",
+      "Enviar el error al navegador sin filtros para ser transparente",
+      "Mostrar mensajes genéricos al usuario ('Ocurrió un error') y registrar (loguear) el detalle técnico seguro en el servidor",
+      "No validar los errores, solo detener la aplicación web"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 91,
+    "question": "¿Cuál es el principio detrás de la arquitectura 'Zero Trust' aplicable al diseño de redes?",
+    "options": [
+      "Confiar en todo dispositivo físico que se conecte con un cable ethernet a la red corporativa",
+      "Asumir que la red ya está comprometida y no confiar en ninguna entidad por defecto, exigiendo autenticación y autorización constantes en todos los niveles",
+      "Eliminar las contraseñas y utilizar solo direcciones IP para validar confianza",
+      "Delegar toda la seguridad al proveedor de la nube"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 92,
+    "question": "¿Cuál es un impacto común del malware 'Keylogger' oculto en el cliente?",
+    "options": [
+      "Elevar los privilegios de un usuario estándar a administrador de dominio en el backend",
+      "Cifrar el disco duro y exigir un rescate",
+      "Registrar y filtrar contraseñas y datos sensibles introducidos mediante el teclado por el usuario antes de ser cifrados y enviados",
+      "Inyectar consultas SQL en el servidor"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 93,
+    "question": "¿Por qué un ataque de Inyección (como SQLi) no suele ser mitigado por el uso de HTTPS?",
+    "options": [
+      "Porque HTTPS cifra la base de datos",
+      "Porque HTTPS opera en la capa de transporte cifrando la red, mientras que la Inyección ataca la capa de aplicación y la lógica del intérprete de backend una vez desencriptado el paquete",
+      "Porque SQL funciona sobre UDP",
+      "Porque HTTPS facilita que los scripts del atacante corran más rápido"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 94,
+    "question": "En el contexto de prevención de DoS, ¿Cuál es el principal beneficio de usar un CDN (Content Delivery Network)?",
+    "options": [
+      "Reduce el costo del dominio",
+      "Ofrece infraestructura distribuida masiva que absorbe ataques volumétricos bloqueándolos antes de que lleguen a nuestro servidor centralizado",
+      "Cifra los correos electrónicos",
+      "Deshabilita las descargas de JavaScript en los clientes"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 95,
+    "question": "¿Qué característica esencial tiene un ataque XSS Reflejado en contraposición a un Almacenado?",
+    "options": [
+      "No utiliza código JavaScript",
+      "El script malicioso va embebido directamente en el enlace (URL) que la víctima hace click, y la aplicación lo 'refleja' en la página de respuesta inmediata",
+      "Solo funciona en redes locales cerradas",
+      "Se inyecta permanentemente en la base de datos de la aplicación"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 96,
+    "question": "¿A qué se refiere el principio de 'Defensa en Profundidad' (Defense in Depth)?",
+    "options": [
+      "Usar un solo firewall perimetral muy caro",
+      "Implementar múltiples capas superpuestas de controles de seguridad de manera que si una falla, otra mantenga la protección",
+      "Cifrar los archivos comprimidos dentro de otros archivos comprimidos indefinidamente",
+      "Evitar subir la aplicación web a la nube"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 97,
+    "question": "¿Cuál es la función del proceso de 'Hardening' (Endurecimiento) en la configuración de seguridad?",
+    "options": [
+      "Hacer el código de la aplicación más largo y complejo",
+      "Comprar discos rígidos resistentes a caídas",
+      "Reducir la superficie de ataque eliminando servicios innecesarios, aplicando parches, deshabilitando usuarios por defecto y ajustando políticas restrictivas en servidores",
+      "Cifrar datos utilizando hardware dedicado"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 98,
+    "question": "¿Por qué utilizar componentes u ORMs actualizados ayuda a evitar inyecciones (Injection)?",
+    "options": [
+      "Porque un ORM siempre cifra los datos almacenados de forma automática",
+      "Porque el ORM bloquea conexiones IP sospechosas",
+      "Porque el framework/ORM suele manejar internamente el escapado y la parametrización correcta de las variables enviadas a la base de datos",
+      "Porque un ORM utiliza NoSQL que es invulnerable por diseño"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 99,
+    "question": "¿Qué diferencia conceptual existe entre Autenticación y Autorización?",
+    "options": [
+      "No existe diferencia real",
+      "La autenticación se basa en roles y la autorización en contraseñas",
+      "La Autenticación verifica QUIÉN es el usuario (identidad), la Autorización determina QUÉ puede hacer ese usuario (permisos)",
+      "La Autenticación ocurre en la base de datos, la Autorización en el firewall"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 100,
+    "question": "En el ciclo de vida del software, ¿cuándo es el momento óptimo y más económico para corregir un fallo de diseño inseguro?",
+    "options": [
+      "En producción, mediante parches de emergencia",
+      "Durante la fase de requerimientos y arquitectura inicial (Shift Left Security)",
+      "Después de sufrir un ataque o filtración de datos",
+      "Durante la auditoría final de seguridad antes de salir a producción"
+    ],
+    "correctIndex": 1
+  }
+]

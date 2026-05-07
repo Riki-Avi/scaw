@@ -22,6 +22,7 @@
                 <a href="clase4.html"
                     style="color: white; margin-right: 15px; text-decoration: none; font-weight: 600;">Clase 4</a>
                 <a href="clase5.html" style="color: white; text-decoration: none; font-weight: 600;">Clase 5</a>
+                <a href="clase6.html" style="color: white; text-decoration: underline; font-weight: 600;">Clase 6</a>
             </nav>
         </div>
     </header>
@@ -47,7 +48,8 @@
                         críticas ante el aumento del 200% de detecciones.</li>
                     <li><strong>Ataques y Malware:</strong> Repaso de ataques de Denegación de Servicio (DoS/DDoS por
                         <i>flooding</i>), <i>sniffing</i> en redes inalámbricas, ataques al cliente (ej. ejecución de
-                        JS, <i>tampering</i>) y clasificación de malware (<i>rootkits, backdoors, ransomware</i>).</li>
+                        JS, <i>tampering</i>) y clasificación de malware (<i>rootkits, backdoors, ransomware</i>).
+                    </li>
                 </ul>
             </div>
 
@@ -83,7 +85,8 @@
                     <li><strong>XXE (XML External Entities):</strong> Vulnerabilidad en el <i>parser</i> de XML. Un
                         atacante inyecta entidades personalizadas (ej.
                         <code>&lt;!ENTITY xxe SYSTEM "file:///etc/passwd"&gt;</code>) para leer archivos del servidor o
-                        causar DoS (apuntando a <code>/dev/random</code>).</li>
+                        causar DoS (apuntando a <code>/dev/random</code>).
+                    </li>
                 </ul>
                 <div class="example-box">
                     <strong>Prevención XXE:</strong>
@@ -125,7 +128,8 @@
                 <ul>
                     <li><strong>SQL Injection:</strong> Alterar la sintaxis para extraer tablas enteras (usando
                         <code>UNION</code>) o modificar datos (ej. <code>UPDATE precio SET...</code> concatenando
-                        sentencias). <strong>Prevención:</strong> <i>Prepared Statements</i> y ORMs.</li>
+                        sentencias). <strong>Prevención:</strong> <i>Prepared Statements</i> y ORMs.
+                    </li>
                     <li><strong>XSS (Cross-Site Scripting):</strong> Inyectar JavaScript malicioso (Reflejado,
                         Almacenado o DOM). Ej: Insertar <code>&lt;span onmouseover="..."&gt;</code> en un foro público.
                     </li>
@@ -165,7 +169,8 @@
                 <ul>
                     <li><strong>Deserialización Insegura:</strong> Tomar datos binarios/texto (ej. en PHP:
                         <code>s:4:"user"</code>), y alterar la cadena a <code>s:5:"admin"</code> antes de que el
-                        servidor lo suba a memoria como objeto.</li>
+                        servidor lo suba a memoria como objeto.
+                    </li>
                     <li><strong>Actualizaciones sin firmar:</strong> Riesgo de introducir parches maliciosos en la
                         infraestructura.</li>
                 </ul>

@@ -1,0 +1,23 @@
+(0:00 - 0:05:00): Introducción de la clase. El docente coordina la fecha del examen, el aula (606) y establece la agenda: los puntos 9 y 10 del OWASP Top 10 (falla de registro/monitoreo y fallo seguro) y un bloque sobre IA con el profesor Pomar.
+(0:05:00 - 0:10:00): Se profundiza en el punto 9 del OWASP: Fallas en el registro y monitoreo de actividades. Se analiza la importancia de detectar ataques a tiempo en lugar de solo auditar incidentes después de que han ocurrido.
+(0:10:00 - 0:15:00): Se discute el impacto negativo de tener logs que nadie revisa o alertas inexistentes. La falta de visibilidad permite que los atacantes persistan en el sistema sin ser detectados durante largos periodos.
+(0:15:00 - 0:20:00): Se detalla la necesidad de gestionar logs, la retención de eventos (recomendado al menos un año) y la capacidad de modificar o proteger dichos registros en sistemas tipo SIEM.
+(0:20:00 - 0:25:00): Dinámica de clase: el profesor enfatiza que no le gusta solo leer diapositivas, sino compartir su experiencia. Se menciona que muchas empresas tardan demasiado en detectar intrusiones si no tienen un monitoreo proactivo.
+(0:25:00 - 0:30:00): Ejemplos de escenarios reales: se discuten casos de compromiso en software de código abierto donde se eliminaron repositorios por falta de control en los privilegios y monitoreo.
+(0:30:00 - 0:50:00): (Nota: el video tiene un salto en la cronología de la transcripción). Se aborda el concepto de "fallar de manera segura". La idea es que, ante un estado inesperado, el sistema debe terminar en un lugar controlado y estable, no en uno vulnerable.
+(0:50:00 - 0:55:00): Ejemplo histórico del docente: perder un archivo sin grabar por un corte de energía, ilustrando la importancia de los sistemas de recuperación y estados seguros.
+(0:55:00 - 1:00:00): Medidas de prevención: aplicación de cuotas de disco para evitar ataques de denegación de servicio (DoS) por llenado de logs, y la importancia de no brindar información excesiva en mensajes de error (evitar fuga de datos).
+(1:00:00 - 1:03:00): Cierre del bloque OWASP: se destaca que el monitoreo debe ser inteligente; no sirve de nada el modo 'debug' si no se definen alertas sobre eventos críticos (creación de usuarios, cambios de roles).
+(1:10:00 - 1:15:00): Comienza el bloque de Inteligencia Artificial y Seguridad. Introducción a qué es la IA, su capacidad para procesar lenguaje, traducir y analizar datos ("leer la Matrix").
+(1:15:00 - 1:20:00): Funcionamiento de la IA: percepción de un entorno físico o virtual, modelos expertos, datos históricos y toma de decisiones a través de actuadores.
+(1:20:00 - 1:25:00): Objetivos y beneficios de la IA: amplificación de capacidades humanas, automatización de tareas tediosas, reducción de errores y aceleración de la investigación científica.
+(1:25:00 - 1:30:00): Riesgos de la IA: uso para fake news, sesgos, discriminación y la alta demanda de infraestructura (GPUs/TPUs) para su entrenamiento y ejecución.
+(1:30:00 - 1:35:00): Historia de la IA y ética: mención a las leyes de la robótica de Isaac Asimov y la necesidad de proteger la dignidad humana desde el diseño (privacidad por defecto).
+(1:35:00 - 1:40:00): Reglas de Microsoft (Satya Nadella): la IA debe ayudar a la humanidad respetando la autonomía humana y siendo transparente en sus decisiones.
+(1:40:00 - 1:50:00): Funcionamiento profundo: redes neuronales profundas que aprenden patrones de volúmenes masivos de datos sin reglas explícitas de programación.
+(1:50:00 - 2:02:00): (El contenido varía según la dinámica) Se habla de cómo la IA puede ser un arma de doble filo: tanto para defensa (detección temprana de amenazas) como para ataque (generación de malware avanzado o phishing).
+(2:02:00 - 2:10:00): IA como escudo: telemetría masiva, detección de patrones sutiles, gobierno de la solución y las líneas rojas sobre lo que una máquina no debería decidir.
+(2:10:00 - 2:30:00): IA como espada (ataques): uso de modelos para ingeniería social, explotación de vulnerabilidades y el riesgo de la "agencia excesiva" (dar autonomía total a la IA).
+(2:30:00 - 2:45:00): Ejemplos culturales: uso de referencias a películas como Duro de Matar 4.0 o Yo, Robot para explicar el prompt injection y la manipulación de la IA.
+(2:45:00 - 2:55:00): Desempoderamiento gradual: reflexión sobre la película Wally y cómo la dependencia excesiva de la tecnología hace que el humano pierda capacidades técnicas críticas.
+(2:55:00 - 3:00:21): Cierre: ejemplo del vuelo de Sully Sallenberger para ilustrar la importancia del criterio humano en situaciones límite. Despedida y mención de las películas recomendadas para la próxima clase.
