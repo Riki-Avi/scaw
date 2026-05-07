@@ -21,10 +21,10 @@
                     style="color: white; margin-right: 15px; text-decoration: none; font-weight: 600;">Clase 3</a>
                 <a href="clase4.html"
                     style="color: white; margin-right: 15px; text-decoration: none; font-weight: 600;">Clase 4</a>
-                <a href="clase5.html" 
+                <a href="clase5.html"
                     style="color: white; margin-right: 15px; text-decoration: none; font-weight: 600;">Clase 5</a>
-                <a href="clase6.html" 
-                    style="color: white; text-decoration: underline; font-weight: 600;">Clase 6</a>
+                <a href="clase6.html"
+                    style="color: white; margin-right: 15px; text-decoration: none; font-weight: 600;">Clase 6</a>
             </nav>
         </div>
     </header>
@@ -32,17 +32,24 @@
     <main class="container">
         <section class="intro">
             <h2>Clase 6: OWASP Top 10 (Puntos 9 y 10) e Inteligencia Artificial</h2>
-            <p>Esta clase se dividió en dos bloques principales. El primero concluyó el análisis del <strong>OWASP Top 10</strong>, abarcando las fallas de monitoreo y la importancia del fallo seguro. El segundo bloque introdujo el rol dual de la <strong>Inteligencia Artificial (IA)</strong> en la ciberseguridad, funcionando tanto como escudo protector como herramienta ofensiva.</p>
+            <p>Esta clase se dividió en dos bloques principales. El primero concluyó el análisis del <strong>OWASP Top
+                    10</strong>, abarcando las fallas de monitoreo y la importancia del fallo seguro. El segundo bloque
+                introdujo el rol dual de la <strong>Inteligencia Artificial (IA)</strong> en la ciberseguridad,
+                funcionando tanto como escudo protector como herramienta ofensiva.</p>
         </section>
 
         <div class="grid-2">
             <div class="card">
                 <h3>09. Fallas en el Registro y Monitoreo</h3>
-                <p>Ocurre cuando una aplicación no registra eventos clave de seguridad o nadie los supervisa, perdiendo trazabilidad y respuesta ante incidentes.</p>
+                <p>Ocurre cuando una aplicación no registra eventos clave de seguridad o nadie los supervisa, perdiendo
+                    trazabilidad y respuesta ante incidentes.</p>
                 <ul>
-                    <li><strong>Monitoreo Nulo:</strong> Tener logs que nadie revisa es funcionalmente igual a no tenerlos. El monitoreo debe ser proactivo y emitir alertas.</li>
-                    <li><strong>Eventos Críticos a Loguear:</strong> Intentos fallidos de login, accesos a datos sensibles, cambios de privilegios y errores de sistema.</li>
-                    <li><strong>Persistencia de Atacantes:</strong> La falta de visibilidad permite que atacantes permanezcan en el sistema por años (ej. robo silencioso de datos).</li>
+                    <li><strong>Monitoreo Nulo:</strong> Tener logs que nadie revisa es funcionalmente igual a no
+                        tenerlos. El monitoreo debe ser proactivo y emitir alertas.</li>
+                    <li><strong>Eventos Críticos a Loguear:</strong> Intentos fallidos de login, accesos a datos
+                        sensibles, cambios de privilegios y errores de sistema.</li>
+                    <li><strong>Persistencia de Atacantes:</strong> La falta de visibilidad permite que atacantes
+                        permanezcan en el sistema por años (ej. robo silencioso de datos).</li>
                 </ul>
                 <div class="example-box">
                     <strong>Buenas Prácticas (SIEM):</strong>
@@ -55,50 +62,68 @@
 
             <div class="card">
                 <h3>10. Manejo Inadecuado de Condiciones Excepcionales (Fallo Seguro)</h3>
-                <p>El software no solo debe funcionar bien en situaciones ideales, sino que también debe saber fallar de una manera segura frente a excepciones.</p>
+                <p>El software no solo debe funcionar bien en situaciones ideales, sino que también debe saber fallar de
+                    una manera segura frente a excepciones.</p>
                 <ul>
-                    <li><strong>Fallo Seguro:</strong> Ante un error o comportamiento anómalo, el sistema debe caer en un estado controlado, restrictivo y seguro.</li>
-                    <li><strong>Exposición de Información:</strong> Un mensaje de error no debe revelar detalles internos (ej. versiones de base de datos o si un usuario específico existe).</li>
+                    <li><strong>Fallo Seguro:</strong> Ante un error o comportamiento anómalo, el sistema debe caer en
+                        un estado controlado, restrictivo y seguro.</li>
+                    <li><strong>Exposición de Información:</strong> Un mensaje de error no debe revelar detalles
+                        internos (ej. versiones de base de datos o si un usuario específico existe).</li>
                 </ul>
                 <div class="example-box">
                     <strong>Mitigación:</strong>
                     <br>- Usar cuotas de disco para evitar llenado de logs que causen Denegación de Servicio (DoS).
-                    <br>- Ocultar stack-traces en los errores enviados al usuario (ej. mostrar "Error interno" en lugar del detalle de la excepción).
+                    <br>- Ocultar stack-traces en los errores enviados al usuario (ej. mostrar "Error interno" en lugar
+                    del detalle de la excepción).
                     <br>- Validar estrictamente datos de entrada y salida.
                 </div>
             </div>
 
             <div class="card">
                 <h3>Introducción a la Inteligencia Artificial</h3>
-                <p>La IA aprende patrones de volúmenes masivos de datos (redes neuronales profundas) sin programación explícita, buscando automatizar tareas y potenciar capacidades.</p>
+                <p>La IA aprende patrones de volúmenes masivos de datos (redes neuronales profundas) sin programación
+                    explícita, buscando automatizar tareas y potenciar capacidades.</p>
                 <ul>
-                    <li><strong>Riesgos Comunes:</strong> Sesgos en la toma de decisiones, discriminación, y alta dependencia de poder de cómputo (GPUs/TPUs).</li>
-                    <li><strong>Ética y Transparencia:</strong> Siguiendo principios de diseño como los de Microsoft, la IA debe respetar la autonomía y dignidad humana, permitiendo que sus decisiones sean auditables y justificadas.</li>
-                    <li><strong>Alucinaciones:</strong> El riesgo de que la IA genere resultados falsos con total seguridad y convicción (ej. citar casos legales inventados).</li>
+                    <li><strong>Riesgos Comunes:</strong> Sesgos en la toma de decisiones, discriminación, y alta
+                        dependencia de poder de cómputo (GPUs/TPUs).</li>
+                    <li><strong>Ética y Transparencia:</strong> Siguiendo principios de diseño como los de Microsoft, la
+                        IA debe respetar la autonomía y dignidad humana, permitiendo que sus decisiones sean auditables
+                        y justificadas.</li>
+                    <li><strong>Alucinaciones:</strong> El riesgo de que la IA genere resultados falsos con total
+                        seguridad y convicción (ej. citar casos legales inventados).</li>
                 </ul>
             </div>
 
             <div class="card">
                 <h3>La IA en Seguridad: El Escudo</h3>
-                <p>La inteligencia artificial se utiliza cada vez más como un robusto mecanismo de defensa proactiva.</p>
+                <p>La inteligencia artificial se utiliza cada vez más como un robusto mecanismo de defensa proactiva.
+                </p>
                 <ul>
-                    <li><strong>Detección Temprana:</strong> Capacidad para ingerir telemetría masiva e identificar patrones sutiles y anomalías casi en tiempo real.</li>
-                    <li><strong>Respuesta Automatizada:</strong> La IA puede interactuar con actuadores (como firewalls) para bloquear IPs maliciosas de inmediato.</li>
-                    <li><strong>Eficiencia Operativa:</strong> Reduce los tiempos de respuesta y detección en incidentes, liberando a los analistas humanos de tareas repetitivas.</li>
+                    <li><strong>Detección Temprana:</strong> Capacidad para ingerir telemetría masiva e identificar
+                        patrones sutiles y anomalías casi en tiempo real.</li>
+                    <li><strong>Respuesta Automatizada:</strong> La IA puede interactuar con actuadores (como firewalls)
+                        para bloquear IPs maliciosas de inmediato.</li>
+                    <li><strong>Eficiencia Operativa:</strong> Reduce los tiempos de respuesta y detección en
+                        incidentes, liberando a los analistas humanos de tareas repetitivas.</li>
                 </ul>
             </div>
 
             <div class="card">
                 <h3>La IA en Seguridad: La Espada</h3>
-                <p>El mismo poder se ha convertido en una amenaza al democratizar el acceso a herramientas ofensivas potentes.</p>
+                <p>El mismo poder se ha convertido en una amenaza al democratizar el acceso a herramientas ofensivas
+                    potentes.</p>
                 <ul>
-                    <li><strong>Ingeniería Social a Escala:</strong> Creación de campañas de phishing hiperpersonalizadas y <i>deepfakes</i> que vulneran la identidad.</li>
-                    <li><strong>Agencia Excesiva:</strong> El peligro de otorgar autonomía total a modelos (agentes) para ejecutar acciones (ej. responder correos en nuestro nombre) sin control humano.</li>
-                    <li><strong>Prompt Injection & Jailbreaking:</strong> Técnicas para engañar a la IA y eludir sus filtros éticos, haciendo que genere contenido malicioso (como instrucciones destructivas).</li>
+                    <li><strong>Ingeniería Social a Escala:</strong> Creación de campañas de phishing
+                        hiperpersonalizadas y <i>deepfakes</i> que vulneran la identidad.</li>
+                    <li><strong>Agencia Excesiva:</strong> El peligro de otorgar autonomía total a modelos (agentes)
+                        para ejecutar acciones (ej. responder correos en nuestro nombre) sin control humano.</li>
+                    <li><strong>Prompt Injection & Jailbreaking:</strong> Técnicas para engañar a la IA y eludir sus
+                        filtros éticos, haciendo que genere contenido malicioso (como instrucciones destructivas).</li>
                 </ul>
                 <div class="example-box">
                     <strong>El Factor Humano (Human-in-the-loop):</strong>
-                    <br>Es vital que exista siempre supervisión humana en las decisiones críticas. Una dependencia excesiva en la tecnología produce desempoderamiento y riesgos sistémicos.
+                    <br>Es vital que exista siempre supervisión humana en las decisiones críticas. Una dependencia
+                    excesiva en la tecnología produce desempoderamiento y riesgos sistémicos.
                 </div>
             </div>
         </div>
